@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Коваленко Ирина](https://up.htmlacademy.ru/adaptive/18/user/1154039).
-* Наставник: Евгений Баранков.
+* Наставник: [Евгений Баранков](https://htmlacademy.ru/profile/id518169).
 
 ---
 
