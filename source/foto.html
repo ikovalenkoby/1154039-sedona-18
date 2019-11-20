@@ -6,24 +6,25 @@
   </head>
   <body>
       <header class="page-header">
-          <nav class="main_nav">
-              <ul class="main_nav__ul site-list">
-                  <li class="main_nav__item main_nav__item--active">
+         <nav class="main-nav">
+              <ul class="main-nav__ul menu">
+                  <li class="menu__item menu__item--active">
                       <a href="index.html">главная</a>
                   </li>
-                  <li class="main_nav__item">
+                  <li class="menu__item">
                       <a href="foto.html">фото и видео</a>
                   </li>
-                  <li class="main_nav__item">
+                  <li class="menu__item">
                       <a href="form.html">форма отзыва</a>
                   </li>
-                  <li class="main_nav__item">
+                  <li class="menu__item">
                       <a href="https://htmlacademy.ru/">html academy</a>
                   </li>
-              </ul>  
+             </ul>  
           </nav>
-          <a class="page-header__logo"><img class="page-header__img-logo" width="100" height="80" src="https://via.placeholder.com/150x150" alt="Sedona"></a>
-          <button class="main_nav__button" type="button">Открыть окно
+          <a class="page-header__logo" href="index.html">
+              <img class="page-header__img-logo" width="100" height="80" src="https://via.placeholder.com/150x150" alt="Sedona"></a>
+          <button class="menu__button" type="button">Открыть окно
           </button>     
       </header>
       <main class="page-main">
@@ -32,79 +33,91 @@
           </section>
           <section class="foto">
               <header class="foto-header">
-                  <h2 class="visible-hidden">фото и видео седоны</h2> 
-                <p class="foto__title title-font">фото и видео</p>
-                <p class="foto__description">не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о плитике и экономике.</p> 
+                  <h2 class="visible-hidden">фото и видео седоны</h2>
+                  <p class="foto__title title-font">фото и видео</p>
+                  <p class="foto__description description">не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о плитике и экономике.
+                  </p>
               </header>
               <ul class="foto-list">
                   <li class="foto-list__item">
-                      <a href="https://via.placeholder.com/150x150" class="foto-link"><img class="foto-img" src="https://via.placeholder.com/150x150" alt="живописные пейзажи седоны"></a>
-                        <div class="foto-description-wrapper">
+                      <a class="foto-link" href="https://via.placeholder.com/150x150">
+                          <img class="foto-img" src="https://via.placeholder.com/150x150" alt="живописные пейзажи седоны"></a>
+                      <div class="foto-description-wrapper">
                           <p class="foto__title title-font">Неродные просторы</p>
-                          <p class="foto__description">Автор фото: Борис</p>
-                          <p class="foto__like"><b class="sum-like icon-like">1350</b></p>
-                        </div> 
-                  </li>
-                 <li class="foto-list__item">
-                      <a href="https://via.placeholder.com/150x150" class="foto-link"><img class="foto-img" src="https://via.placeholder.com/150x150" alt="растительность"></a>
-                        <div class="foto-description-wrapper">
-                          <b class="foto__title title-font">местная растительность</b>
-                          <p class="foto__description">Автор фото: Сергей</p>
-                          <p class="foto__like"><b class="sum-like icon-like">143</b></p>
-                        </div> 
+                          <p class="foto__description description">Автор фото: Борис</p>
+                          <p class="foto__like">
+                                <b class="sum-like icon-like">1350</b>
+                          </p>
+                      </div>
                   </li>
                   <li class="foto-list__item">
-                      <a href="https://via.placeholder.com/150x150" class="foto-link"><img class="foto-img" src="https://via.placeholder.com/150x150" alt="южная дорога к седоне"></a>
-                        <div class="foto-description-wrapper">
-                          <p class="foto__title title-font">дорога на север</p>
-                          <p class="foto__description">Автор фото: петр</p>
-                          <p class="foto__like"><b class="sum-like icon-like">96</b></p>
-                        </div> 
+                     <a href="https://via.placeholder.com/150x150" class="foto-link">
+                          <img class="foto-img" src="https://via.placeholder.com/150x150" alt="растительность"></a>
+                     <div class="foto-description-wrapper">
+                            <b class="foto__title title-font">местная растительность</b>
+                            <p class="foto__description description">Автор фото: Сергей</p>
+                            <p class="foto__like"><b class="sum-like icon-like">143</b></p>
+                     </div>
                   </li>
                   <li class="foto-list__item">
-                      <a href="https://via.placeholder.com/150x150" class="foto-link"><img class="foto-img" src="https://via.placeholder.com/150x150" alt="мост дьявола"></a>
-                        <div class="foto-description-wrapper">
-                          <p class="foto__title title-font">мост дьявола</p>
-                          <p class="foto__description">Автор фото: Антон</p>
-                          <p class="foto__like"><b class="sum-like icon-like">254</b></p>
-                        </div> 
+                      <a href="https://via.placeholder.com/150x150" class="foto-link">
+                          <img class="foto-img" src="https://via.placeholder.com/150x150" alt="южная дорога к седоне"></a>
+                      <div class="foto-description-wrapper">
+                            <p class="foto__title title-font">дорога на север</p>
+                            <p class="foto__description description">Автор фото: петр</p>
+                            <p class="foto__like">
+                                <b class="sum-like icon-like">96</b>
+                            </p>
+                      </div>
+                  </li>
+                  <li class="foto-list__item">
+                      <a href="https://via.placeholder.com/150x150" class="foto-link">
+                          <img class="foto-img" src="https://via.placeholder.com/150x150" alt="мост дьявола"></a>
+                      <div class="foto-description-wrapper">
+                            <p class="foto__title title-font">мост дьявола</p>
+                            <p class="foto__description">Автор фото: Антон</p>
+                            <p class="foto__like"><b class="sum-like icon-like">254</b></p>
+                      </div>
                   </li>
               </ul>
           </section>
-           <section class="video">
+          <section class="video">
               <h2 class="video__title">все ещё сомневаетесь?</h2>
-              <p class="search__description">смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+              <p class="video__description">смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
                <div class="video__wrapper">
                    <video class="video__source" controls="controls" poster="video/duel.jpg">
                        <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'>
                        <source src="video/duel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                       <source src="video/duel.webm" type='video/webm; codecs="vp8, vorbis"'>
-                       Тег video не поддерживается вашим браузером. 
+                       <source src="video/duel.webm" type='video/webm; codecs="vp8, vorbis"'>Тег video не поддерживается вашим браузером.
                        <a class="video__source-link" href="video/duel.mp4">Скачайте видео</a>
-                    </video>
+                   </video>
                    <div class="video__buttons">
-                       <button class="video__button replay left" type="button">Смотреть сначала</button>
-                       <button class="video__button CC " type="button">CC</button> 
-                       <button class="video__button fullsize" type="button">На весь экран</button>
+                       <button class="video__button icon-replay left" type="button">Смотреть сначала</button>
+                       <button class="video__button icon-CC " type="button">CC</button>
+                       <button class="video__button icon-fullsize" type="button">На весь экран</button>
                    </div>
                </div>
           </section>
       </main>
-       <footer class="page-footer wrapper">
-              <h3 class="contacts_title">#visitsedona</h3>
-              <div class="page-footer__social social">
-                  <ul class="social_list">
-                      <li class="social_item"> <a class="social_link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в твитере</a></li> 
-                       <li class="social_item"> <a class="social_link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в фейсбуке</a></li> 
-                       <li class="social_item"> <a class="social_link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в youtube</a></li> 
-                    </ul>
-            </div>   
-               <p class="page-footer__copyright copyright">
-                   разработано
-                   <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"> 
+      <footer class="page-footer wrapper">
+           <h2 class="contacts_title">#visitsedona</h2>
+           <div class="page-footer__social social">
+                  <ul class="social__list">
+                      <li class="social__item">
+                          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в твитере</a></li>
+                      <li class="social__item">
+                          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в фейсбуке</a></li>
+                      <li class="social__item">
+                          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в youtube</a>
+                      </li>
+                  </ul>
+           </div>
+           <p class="page-footer__copyright copyright">
+                   <span class="copyright__text">разработано</span>
+                   <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
                        htmlacademy
                    </a>
-               </p>
+           </p>
         </footer>
   </body>
 </html>
