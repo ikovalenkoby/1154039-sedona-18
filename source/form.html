@@ -20,11 +20,11 @@
                   <li class="menu__item">
                       <a href="https://htmlacademy.ru/">html academy</a>
                   </li>
-             </ul>  
+             </ul>
           </nav>
           <a class="page-header__logo" href="index.html"><img class="page-header__img-logo" width="100" height="80" src="https://via.placeholder.com/150x150" alt="Sedona"></a>
           <button class="menu__button" type="button">Открыть окно
-          </button>     
+          </button>
       </header>
       <main class="page-main">
           <section class="feedback">
@@ -38,27 +38,27 @@
                         <li class="form-item__title title-font">представьтесь: </li>
                         <li class="form-item__text">
                             <label class="form-label" for="name">имя*:</label>
-                            <input class="form-text" type="text" name="name" required placeholder="Петр" />
+                            <input class="form-text" type="text" id="name" required placeholder="Петр" />
                         </li>
                         <li class="form-item__text">
                             <label class="form-label" for="surname">фамилия*:</label>
-                            <input class="form-text" type="text" name="surname" required placeholder="Иванов" />
+                            <input class="form-text" type="text" id="surname" placeholder="Иванов"  required />
                         </li>
                         <li class="form-item__text">
                             <label class="form-label" for="farther_name">отчество:</label>
-                            <input class="form-text" type="text" name="farther_name" placeholder="Александрович" />
+                            <input class="form-text" type="text" id="farther_name"  placeholder="Александрович" />
                         </li>
                   </ul>
                   <ul class="form-item">
                         <li class="form-item__title title-font">контактная инфомарция: </li>
                         <li class="form-item__text form-item__text--contact">
                             <label class="form-label" for="phone-number">контактный телефон*:</label>
-                            <input class="form-text form-text--phone" type="tel" name="phone-number" required placeholder="Введите телефон" />
-                        </li> 
+                            <input class="form-text form-text--phone" type="tel" id="phone-number" required placeholder="Введите телефон" />
+                        </li>
                         <li class="form-item__text form-item__text--contact">
                             <label class="form-label" for="email">электронная почта*:</label>
-                            <input class="form-text form-text--email" type="email" name="email" required placeholder="Введите e-mail" />
-                        </li>   
+                            <input class="form-text form-text--email" type="email" id="email" required placeholder="Введите e-mail" />
+                        </li>
                     </ul>
                   <ul class="form-item">
                         <li class="form-item__title title-font">ваше общее впечатление:</li>
@@ -72,7 +72,7 @@
                                 <label  class="form-label bold">
                                     <input  class="form-radio" type="radio"  name="impress" value="unknown">
                                 Затрудняюсь ответить</label>
-                      </li>   
+                      </li>
                     </ul>
                     <ul class="form-item">
                         <li class="form-item__title title-font">Посещенные достопримечательности:</li>
@@ -85,23 +85,23 @@
                                     <input class="form-checkbox" type="checkbox"  name="attraction" value="Slide Park">Слайд-парк</label>
                                 <label  class="form-label bold">
                                     <input class="form-checkbox" type="checkbox"  name="attraction" value="Red-rock">Красные скалы</label>
-                        </li>   
+                        </li>
                     </ul>
                     <ul class="form-item">
                         <li class="form-item__title title-font">опишите свои эмоции:</li>
                         <li class="form-item__textarea">
                             <textarea class="form-textarea" placeholder="Опишите подробно все свои восторги"></textarea>
-                        </li>   
+                        </li>
                     </ul>
                     <ul class="form-item">
                         <li class="form-item__button">
                             <button class="blue-button h2-font" type="button">отправить отзыв</button>
-                        </li>   
+                        </li>
                     </ul>
                     <ul class="form-item visible-hidden">
                         <li class="form-item__title title-font">Ваш отзыв отправлен! </li>
                         <li class="form-item__description description">
-                          спасибо за ваше участие, ваш отзыв уже поступил к нам. в ближайшее время мы опубликуем его на сайте.     
+                          спасибо за ваше участие, ваш отзыв уже поступил к нам. в ближайшее время мы опубликуем его на сайте.
                         </li>
                         <li class="form-item__button">
                             <button class="blue-button" type="button">закрыть окно</button>
@@ -112,10 +112,10 @@
                         <li class="form-item__description description">проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</li>
                         <li class="form-item__button">
                             <button class="blue-button" type="button">ок</button>
-                        </li> 
+                        </li>
                     </ul>
             </form>
-          </section>      
+          </section>
       </main>
       <footer class="page-footer wrapper">
            <h2 class="contacts_title">#visitsedona</h2>
@@ -138,4 +138,4 @@
            </p>
         </footer>
     </body>
-</html>
+    </html>
