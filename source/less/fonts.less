@@ -1,24 +1,74 @@
 
 @h1-size:9vw;
 @h1-line:@h1-size+3;
+@h2-size:4vw;
+@h3-size:2vw;
+@h3-line:@h3-size+2;
+@usual-size:1.3vw;
+
 @font-face {
   font-family: "PT-Sans";
   src: url("../fonts/ptsans.woff");
   src: url("../fonts/ptsans.woff2");
-  font-weight:normal;
+  font-weight: normal;
 }
+
 @font-face {
-  font-family:"PT-Sans";
+  font-family: "PT-Sans";
   src: url("../fonts/ptsansbold.woff");
   src: url("../fonts/ptsansbold.woff2");
-  font-weight:bold;
+  font-weight: bold;
 }
-H1{font-family:"PT-Sans", Arial;
-font-weight: bold;
-font-size:@h1-size;
-text-align:center;
-text-transform:uppercase;
-font-stretch: semi-expanded;
-color:@white-color;
-letter-spacing: 3px;
-line-height:@h1-line; }
+
+h1 {
+  font-family: "PT-Sans";
+  font-weight: bold;
+  font-size: @h1-size;
+  text-align: center;
+  text-transform: uppercase;
+  color: @white-color;
+  letter-spacing: 3px;
+  line-height: @h1-line;
+}
+
+h2 {
+  font-family: "PT-Sans";
+  font-weight: bold;
+  font-size: @h2-size;
+  text-align: center;
+  text-transform: uppercase;
+  color: @black-color;
+  letter-spacing: 3px;
+  line-height: @h1-line;
+  padding-bottom: @block-item-bottom;
+}
+
+.h2-font {
+  font-size: @h2-size;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-family: "PT-Sans";
+  font-weight: bold;
+  font-size: @h3-size;
+  text-align: center;
+  text-transform: uppercase;
+  color: @black-color;
+  letter-spacing: 1px;
+  line-height: @h3-line;
+  padding: @block-bottom 0;
+}
+
+.title-font {
+  font-size: @h3-size;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.description {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
