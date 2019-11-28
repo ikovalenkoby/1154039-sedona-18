@@ -1,15 +1,81 @@
 
+.social {
+  margin: 0 2.5*@sum-side;
+}
+
 .social__list {
   list-style: none;
   display: flex;
+  justify-content: space-between;
 }
 
 .social__link {
   width: 80px;
   height: 80px;
+  display: block;
 
   &--twitter {
-    background:@blue-color url("../img/icon-twitter.svg") no-repeat;
-    background-size: 80px 80px;
+    background: @blue-color url("../img/icon-twitter.svg") no-repeat;
+    background-position: center;
+    background-size: 40px 40px;
   }
+
+  &--twitter:hover {
+    background: @bglink-color-hover url("../img/icon-twitter.svg") no-repeat;
+    background-position: center;
+    background-size: 40px 40px;
+  }
+
+  &--facebook {
+    background: @blue-color url("../img/icon-facebook.svg") no-repeat;
+    background-position: center;
+    background-size: 40px 40px;
+  }
+
+  &--facebook:hover {
+    background: @bglink-color-hover  url("../img/icon-facebook.svg") no-repeat;
+    background-position: center;
+    background-size: 40px 40px;
+  }
+
+  &--youtube {
+    background: @blue-color url("../img/icon-youtube.svg") no-repeat;
+    background-position: center;
+    background-size: 40px 40px;
+  }
+
+  &--youtube:hover {
+    background: @bglink-color-hover url("../img/icon-youtube.svg") no-repeat;
+    background-position: center;
+    background-size: 40px 40px;
+  }
+}
+
+.page-footer__copyright {
+  margin: @block-item-bottom @main-block-side;
+  text-align: center;
+  font-size: @usual-size;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.copyright__link,
+.copyright__text {
+  display: block;
+}
+
+.copyright__text {
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.copyright__link {
+  display: block;
+  background: url("../img/logo-htmlacademy.svg") no-repeat;
+  width: 25px;
+  height: 35px;
+  background-position: center;
+  background-size: 25px 35px;
 }
