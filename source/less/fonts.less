@@ -21,8 +21,9 @@
   font-weight: bold;
 }
 
-h1 {
-  font-family: "PT-Sans";
+.page-main h1,
+.page-nomain h1 {
+  font-family: "PT-Sans", sans-serif;
   font-weight: bold;
   font-size: @h1-size;
   text-align: center;
@@ -32,8 +33,10 @@ h1 {
   line-height: @h1-line;
 }
 
-h2 {
-  font-family: "PT-Sans";
+.page-main h2,
+.page-nomain h2,
+.page-footer h2 {
+  font-family: "PT-Sans", sans-serif;
   font-weight: bold;
   font-size: @h2-size;
   text-align: center;
@@ -50,8 +53,9 @@ h2 {
   letter-spacing: 2px;
 }
 
-h3 {
-  font-family: "PT-Sans";
+.page-main h3,
+.page-nomain h3 {
+  font-family: "PT-Sans", sans-serif;
   font-weight: bold;
   font-size: @h3-size;
   text-align: center;
@@ -72,4 +76,10 @@ h3 {
 .description {
   text-transform: uppercase;
   letter-spacing: 1px;
+  line-height: @h3-size;
+}
+
+.bold {
+  font-weight: bold;
+  text-transform: none;
 }

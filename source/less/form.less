@@ -1,0 +1,125 @@
+@greyinput-color: rgb(242, 242, 242);
+@greyinput-hover-color: rgb(229, 229, 229);
+@label: 3vw;
+
+.form-item {
+  list-style: none;
+  padding: 2*@block-item-bottom 0;
+  border-bottom: 1px solid @grey-color;
+
+  & li {
+    margin: 0 @main-block-side;
+  }
+}
+
+.form-item__title {
+  text-align: center;
+}
+
+.form-item__text {
+  padding-top: 20px;
+  display: flex;
+  align-content: stretch;
+
+  &--contact {
+    flex-direction: column;
+  }
+
+  &--contact .form-label {
+    padding-left: 40px;
+  }
+}
+
+.form-label {
+  text-transform: uppercase;
+  padding-right: @main-block-side;
+  font-size: 3vw;
+  padding-top: 10px;
+  letter-spacing: 1px;
+}
+
+.form-text {
+  background: @greyinput-color;
+  font-size: @label;
+  padding: 8px 20px;
+  flex-basis: 50%;
+  border: 3px @greyinput-color solid;
+  outline: none;
+
+  &::placeholder {
+    font-weight: bold;
+    font-size: @label;
+    color: @black-color;
+  }
+
+  &:hover {
+    background: @greyinput-hover-color;
+    border: 3px @greyinput-hover-color solid;
+  }
+
+  &:focus {
+    background: @white-color;
+    border: 3px @greyinput-color solid;
+  }
+
+  &--phone,
+  &--email {
+    margin-top: 10px;
+  }
+}
+
+.form-text--phone {
+  background-image: url("../img/icon-phone.svg");
+  background-position: 98% 50%;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+.form-text--email {
+  background-image: url("../img/icon-mail.svg");
+  background-position: 98% 50%;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+
+.form-radio {
+  visibility: hidden;
+}
+
+.form-item__radiogroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.radiogroup-item-wrapper {
+  position: relative;
+}
+
+.radiogroup-label,
+.form-label {
+  font-size: 3vw;
+  padding-top: 10px;
+  cursor: pointer;
+  padding-left: 60px;
+}
+
+.radiogroup-label::after {
+  content: "";
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: 3px solid #939598;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*
+.form-radio:checked + .radiogroup-label:after {
+  outline: 1px solid #939598;
+  border: 2px solid #fff;
+  width: 20px;
+  height: 20px;
+  background-color:#63849F;
+}
+*/
