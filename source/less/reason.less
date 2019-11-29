@@ -9,6 +9,7 @@
 
 .reason-list {
   list-style: none;
+  background: @grey-color-main;
 }
 
 .reason-list__desciption--blue {
@@ -18,8 +19,14 @@
 }
 
 .reason__title {
-  padding-bottom: @block-item-bottom;
+  padding: @block-bottom 0 @block-item-bottom;
   text-align: center;
+  font-weight: bold;
+  font-size: @h3-size;
+  text-transform: uppercase;
+  color: @black-color;
+  letter-spacing: 1px;
+  line-height: @h3-line;
 
   &--white {
     color: @white-color;
@@ -38,6 +45,7 @@
 .reason-clarification {
   padding: @block-bottom 6vw @block-bottom 10vw;
   list-style: none;
+  background: @white-color;
 }
 
 .clarification-item {
@@ -84,6 +92,8 @@
   padding-bottom: @block-bottom;
 }
 
-.reason-list__item:last-child {
-  margin: 0 @sum-side @block-bottom @sum-side;
+.reason-list__item {
+  &:last-child {
+    margin: 0 @sum-side @block-bottom @sum-side;
+  }
 }
