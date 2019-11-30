@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона - Форма</title>
   <link href="css/style.css" rel="stylesheet">
+  <!--<script src="https://kit.fontawesome.com/6fb84a5a7e.js" crossorigin="anonymous"></script>-->
 </head>
 <body>
 <header class="page-header">
@@ -31,7 +32,8 @@
 </header>
 <main class="page-main">
   <section class="title-nomain">
-    <h1 class="title-nomain__h1">sedone</h1>
+    <h1 class="visible-hidden">sedone</h1>
+    <img class="title-nomain__img" src="img/text-sedona.svg" width="50%">
   </section>
   <section class="feedback">
     <header class="feedback-header">
@@ -57,7 +59,7 @@
         </li>
       </ul>
       <ul class="form-item">
-        <li class="form-item__title title-font">контактная инфомарция:</li>
+        <li class="form-item__title title-font">контактная информация:</li>
         <li class="form-item__text form-item__text--contact">
           <label class="form-label" for="phone-number">контактный телефон*:</label>
           <input class="form-text form-text--phone" type="tel" id="phone-number" required placeholder="Введите телефон"/>
@@ -71,36 +73,49 @@
         <li class="form-item__title title-font">ваше общее впечатление:</li>
         <li class="form-item__radiogroup radiogroup">
           <div class="radiogroup-item-wrapper">
-            <label for="radio1" class="radiogroup-label bold">Скорее положительные</label>
-            <input  class="form-radio" type="radio" name="impress" value="plus" id="radio1">
+            <label for="radio1" class="radiogroup-label bold">
+              <input class="form-radio" type="radio" name="impress" value="plus" id="radio1">
+              <span>Скорее положительные</span>
+            </label>
           </div>
           <div class="radiogroup-item-wrapper">
-            <label for="radio2" class="radiogroup-label bold">Скорее отрицательные</label>
-            <input class="form-radio" type="radio" name="impress" value="minus" id="radio2">
+            <label for="radio2" class="radiogroup-label bold">
+              <input class="form-radio" type="radio" name="impress" value="minus" id="radio2">
+              <span>Скорее отрицательные</span>
+            </label>
           </div>
           <div class="radiogroup-item-wrapper">
-            <label for="radio3" class="radiogroup-label bold">Затрудняюсь ответить</label>
-            <input class="form-radio" type="radio" name="impress" value="unknown" id="radio3">
+            <label for="radio3" class="radiogroup-label bold">
+              <input class="form-radio" type="radio" name="impress" value="unknown" id="radio3">
+              <span>Затрудняюсь ответить</span>
+            </label>
           </div>
         </li>
       </ul>
       <ul class="form-item">
         <li class="form-item__title title-font">Посещенные достопримечательности:</li>
-        <li class="form-item__checkbox">
-          <label class="form-label bold" for="check1">Мост Дьявола</label>
-            <input class="form-checkbox" id="check1"  type="checkbox" name="attraction" value="Devil's Bridge">
-          <label class="form-label bold" for="check2">Гора-Колокол</label>
+        <li class="form-item__checkbox checkbox">
+          <label class="checkbox-label bold" for="check1">
+            <input class="form-checkbox" id="check1" type="checkbox" name="attraction" value="Devil's Bridge">
+            <span>Мост Дьявола</span>
+          </label>
+          <label class="checkbox-label bold" for="check2">
             <input class="form-checkbox" id="check2" type="checkbox" name="attraction" value="Bell-Mountain">
-          <label class="form-label bold" for="check3">Слайд-парк</label>
+            <span>Гора-Колокол</span>
+          </label>
+          <label class="checkbox-label bold" for="check3">
             <input class="form-checkbox" id="check3" type="checkbox" name="attraction" value="Slide Park">
-          <label class="form-label bold" for="check4">Красные скалы</label>
+            <span>Слайд-парк</span>
+          </label>
+          <label class="checkbox-label bold" for="check4">
             <input class="form-checkbox" id="check4" type="checkbox" name="attraction" value="Red-rock">
+            <span>Красные скалы</span></label>
         </li>
       </ul>
       <ul class="form-item">
         <li class="form-item__title title-font">опишите свои эмоции:</li>
         <li class="form-item__textarea">
-          <textarea class="form-textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="form-textarea" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
         </li>
       </ul>
       <ul class="form-item">
@@ -110,8 +125,7 @@
       </ul>
       <ul class="form-item visible-hidden">
         <li class="form-item__title title-font">Ваш отзыв отправлен!</li>
-        <li class="form-item__description description">
-          спасибо за ваше участие, ваш отзыв уже поступил к нам. в ближайшее время мы опубликуем его на сайте.
+        <li class="form-item__description description">спасибо за ваше участие, ваш отзыв уже поступил к нам. в ближайшее время мы опубликуем его на сайте.
         </li>
         <li class="form-item__button">
           <button class="blue-button" type="button">закрыть окно</button>
@@ -119,8 +133,7 @@
       </ul>
       <ul class="form-item visible-hidden">
         <li class="form-item__title title-font">что-то пошло не так!</li>
-        <li class="form-item__description description">проверьте поля, выделенные красным, скорее всего вы забыли их
-          заполнить
+        <li class="form-item__description description">проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
         </li>
         <li class="form-item__button">
           <button class="blue-button" type="button">ок</button>
