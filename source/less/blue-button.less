@@ -1,0 +1,25 @@
+
+.blue-button {
+  background-color: @blue-color;
+  color: @white-color;
+  text-decoration: none;
+  display: block;
+  margin: 0 @main-block-side @block-item-bottom @main-block-side;
+  text-align: center;
+  padding: 20px 0;
+  width: 96%;
+
+  &:hover {
+    background-color: @bglink-color-hover;
+  }
+
+  &:active {
+    background-color: @bglink-color-down;
+    color: @link-color-down;
+  }
+
+  &:disabled {
+    opacity: 0.1;
+    color: @link-color-down;
+  }
+}

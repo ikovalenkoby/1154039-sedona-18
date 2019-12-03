@@ -1,0 +1,47 @@
+
+.radiogroup__label {
+  font-size: 3vw;
+  padding-top: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  margin: 10px 25%;
+}
+
+.radiogroup__input {
+  position: relative;
+  appearance: none;
+  font-size: @h2-size;
+  width: 1em;
+  height: 1em;
+  margin: 0;
+  outline: none;
+  font-family: "FontAwesome", sans-serif;
+  transition: 300ms ease-out;
+
+  &::after {
+    content: ""; // circle
+    background: @greyinput-color;
+    display: inline-block;
+    text-align: center;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+  }
+
+  &:hover::after {
+    background: @greyinput-hover-color;
+  }
+
+  &:checked::after {
+    font-weight: 900;
+    content: "\f111"; // circle
+    color: @black-color;
+    background: @greyinput-down-color;
+    font-size: 1em;
+  }
+
+  + span {
+    margin-left: 1.35em;
+  }
+}

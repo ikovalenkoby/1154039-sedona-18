@@ -3,7 +3,7 @@
 @greyinput-down-color: rgb(213, 213, 213);
 @label: 3vw;
 
-.form-item {
+.form__section {
   list-style: none;
   padding: 2*@block-item-bottom 0;
   border-bottom: 1px solid @grey-color;
@@ -17,11 +17,11 @@
   }
 }
 
-.form-item__title {
+.form__title {
   text-align: center;
 }
 
-.form-item__text {
+.form__item {
   padding-top: 20px;
   display: flex;
   align-content: stretch;
@@ -30,12 +30,12 @@
     flex-direction: column;
   }
 
-  &--contact .form-label {
+  &--contact .form__label {
     padding-left: 40px;
   }
 }
 
-.form-label {
+.form__label {
   text-transform: uppercase;
   padding-right: @main-block-side;
   font-size: 3vw;
@@ -43,7 +43,7 @@
   letter-spacing: 1px;
 }
 
-.form-text {
+.form__text {
   background: @greyinput-color;
   font-size: @label;
   padding: 8px 20px;
@@ -73,112 +73,27 @@
   }
 }
 
-.form-text--phone {
+.form__text--phone {
   background-image: url("../img/icon-phone.svg");
   background-position: 98% 50%;
   background-repeat: no-repeat;
   padding-left: 40px;
 }
 
-.form-text--email {
+.form__text--email {
   background-image: url("../img/icon-mail.svg");
   background-position: 98% 50%;
   background-repeat: no-repeat;
   padding-left: 40px;
 }
 
-.radiogroup-label,
-.checkbox-label {
-  font-size: 3vw;
-  padding-top: 10px;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  margin: 10px 25%;
-}
-
-.form-item__radiogroup {
+.form__item--radiogroup,
+.form__item--checkbox {
   padding-top: 20px;
+  flex-direction: column;
 }
 
-.form-radio {
-  position: relative;
-  appearance: none;
-  font-size: @h2-size;
-  width: 1em;
-  height: 1em;
-  margin: 0;
-  outline: none;
-  font-family: "FontAwesome", sans-serif;
-  transition: 300ms ease-out;
-
-  &::after {
-    content: ""; // circle
-    background: @greyinput-color;
-    display: inline-block;
-    text-align: center;
-    width: 1em;
-    height: 1em;
-    border-radius: 50%;
-  }
-
-  &:hover::after {
-    background: @greyinput-hover-color;
-  }
-
-  &:checked::after {
-    font-weight: 900;
-    content: "\f111"; // circle
-    color: @black-color;
-    background: @greyinput-down-color;
-    font-size: 1em;
-  }
-
-  + span {
-    margin-left: 1.35em;
-  }
-}
-
-.form-checkbox {
-  position: relative;
-  appearance: none;
-  font-size: @h2-size;
-  width: 1em;
-  height: 1em;
-  margin: 0;
-  outline: none;
-  font-family: "FontAwesome", sans-serif;
-  transition: 300ms ease-out;
-
-  &::after {
-    content: "";
-    background: @greyinput-color;
-    display: inline-block;
-    text-align: center;
-    width: 1em;
-    height: 1em;
-  }
-
-  &:hover::after {
-    background: @greyinput-hover-color;
-  }
-
-  &:checked::after {
-    font-weight: 900;
-    content: ""; //
-    color: @black-color;
-    background: @greyinput-down-color url("../img/icon-tick.svg") no-repeat;
-    background-size: 0.7em;
-    background-position: center;
-    font-size: 1em;
-  }
-
-  + span {
-    margin-left: 1.35em;
-  }
-}
-
-.form-textarea {
+.form__textarea {
   width: 100%;
   margin-top: 20px;
   border: none;
@@ -190,7 +105,7 @@
 
   &::placeholder {
     font-weight: bold;
-    font-size: 1.1vw;
+    font-size: @h3-size;
     color: @black-color;
   }
 }

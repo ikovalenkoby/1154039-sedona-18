@@ -1,0 +1,48 @@
+
+.checkbox__label {
+  font-size: 3vw;
+  padding-top: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  margin: 10px 25%;
+}
+
+.checkbox__input {
+  position: relative;
+  appearance: none;
+  font-size: @h2-size;
+  width: 1em;
+  height: 1em;
+  margin: 0;
+  outline: none;
+  font-family: "FontAwesome", sans-serif;
+  transition: 300ms ease-out;
+
+  &::after {
+    content: "";
+    background: @greyinput-color;
+    display: inline-block;
+    text-align: center;
+    width: 1em;
+    height: 1em;
+  }
+
+  &:hover::after {
+    background: @greyinput-hover-color;
+  }
+
+  &:checked::after {
+    font-weight: 900;
+    content: ""; //
+    color: @black-color;
+    background: @greyinput-down-color url("../img/icon-tick.svg") no-repeat;
+    background-size: 0.7em;
+    background-position: center;
+    font-size: 1em;
+  }
+
+  + span {
+    margin-left: 1.35em;
+  }
+}

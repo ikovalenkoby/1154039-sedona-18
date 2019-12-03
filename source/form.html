@@ -36,89 +36,89 @@
     <img class="title-nomain__img" src="img/text-sedona.svg" width="50%">
   </section>
   <section class="feedback">
-    <header class="feedback-header">
+    <header class="feedback__header">
       <h2 class="visible-hidden">Отзыв о Седоне</h2>
       <p class="feedback__title title-font">оставьте свой отзыв</p>
       <p class="feedback__description description">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
         посещенных вами достопримечательностях</p>
     </header>
-    <form class="feedback-form form" action="https://echo.htmlacademy.ru" method="post" name="feedback-form">
-      <ul class="form-item">
-        <li class="form-item__title title-font">представьтесь:</li>
-        <li class="form-item__text">
-          <label class="form-label" for="name">имя*:</label>
-          <input class="form-text" type="text" id="name" required placeholder="Петр"/>
+    <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post" name="feedback-form">
+      <ul class="form__section">
+        <li class="form__title title-font">представьтесь:</li>
+        <li class="form__item">
+          <label class="form__label" for="name">имя*:</label>
+          <input class="form__text" type="text" id="name" required placeholder="Петр"/>
         </li>
-        <li class="form-item__text">
-          <label class="form-label" for="surname">фамилия*:</label>
-          <input class="form-text" type="text" id="surname" placeholder="Иванов" required/>
+        <li class="form__item">
+          <label class="form__label" for="surname">фамилия*:</label>
+          <input class="form__text" type="text" id="surname" placeholder="Иванов" required/>
         </li>
-        <li class="form-item__text">
-          <label class="form-label" for="farther_name">отчество:</label>
-          <input class="form-text" type="text" id="farther_name" placeholder="Александрович"/>
-        </li>
-      </ul>
-      <ul class="form-item">
-        <li class="form-item__title title-font">контактная информация:</li>
-        <li class="form-item__text form-item__text--contact">
-          <label class="form-label" for="phone-number">контактный телефон*:</label>
-          <input class="form-text form-text--phone" type="tel" id="phone-number" required placeholder="Введите телефон"/>
-        </li>
-        <li class="form-item__text form-item__text--contact">
-          <label class="form-label" for="email">электронная почта*:</label>
-          <input class="form-text form-text--email" type="email" id="email" required placeholder="Введите e-mail"/>
+        <li class="form__item">
+          <label class="form__label" for="farther_name">отчество:</label>
+          <input class="form__text" type="text" id="farther_name" placeholder="Александрович"/>
         </li>
       </ul>
-      <ul class="form-item">
-        <li class="form-item__title title-font">ваше общее впечатление:</li>
-        <li class="form-item__radiogroup radiogroup">
-          <div class="radiogroup-item-wrapper">
-            <label for="radio1" class="radiogroup-label bold">
-              <input class="form-radio" type="radio" name="impress" value="plus" id="radio1">
+      <ul class="form__section">
+        <li class="form__title title-font">контактная информация:</li>
+        <li class="form__item form__item--contact">
+          <label class="form__label" for="phone-number">контактный телефон*:</label>
+          <input class="form__text form__text--phone" type="tel" id="phone-number" required placeholder="Введите телефон"/>
+        </li>
+        <li class="form__item form__item--contact">
+          <label class="form__label" for="email">электронная почта*:</label>
+          <input class="form__text form__text--email" type="email" id="email" required placeholder="Введите e-mail"/>
+        </li>
+      </ul>
+      <ul class="form__section">
+        <li class="form__title title-font">ваше общее впечатление:</li>
+        <li class="form__item form__item--radiogroup radiogroup">
+          <div class="radiogroup__wrapper">
+            <label for="radio1" class="radiogroup__label bold">
+              <input class="radiogroup__input" type="radio" name="impress" value="plus" id="radio1">
               <span>Скорее положительные</span>
             </label>
           </div>
-          <div class="radiogroup-item-wrapper">
-            <label for="radio2" class="radiogroup-label bold">
-              <input class="form-radio" type="radio" name="impress" value="minus" id="radio2">
+          <div class="radiogroup__wrapper">
+            <label for="radio2" class="radiogroup__label bold">
+              <input class="radiogroup__input" type="radio" name="impress" value="minus" id="radio2">
               <span>Скорее отрицательные</span>
             </label>
           </div>
-          <div class="radiogroup-item-wrapper">
-            <label for="radio3" class="radiogroup-label bold">
-              <input class="form-radio" type="radio" name="impress" value="unknown" id="radio3">
+          <div class="radiogroup___wrapper">
+            <label for="radio3" class="radiogroup__label bold">
+              <input class="radiogroup__input" type="radio" name="impress" value="unknown" id="radio3">
               <span>Затрудняюсь ответить</span>
             </label>
           </div>
         </li>
       </ul>
-      <ul class="form-item">
-        <li class="form-item__title title-font">Посещенные достопримечательности:</li>
-        <li class="form-item__checkbox checkbox">
-          <label class="checkbox-label bold" for="check1">
-            <input class="form-checkbox" id="check1" type="checkbox" name="attraction" value="Devil's Bridge">
+      <ul class="form__section">
+        <li class="form__title title-font">Посещенные достопримечательности:</li>
+        <li class="form__item form__item--checkbox checkbox">
+          <label class="checkbox__label bold" for="check1">
+            <input class="checkbox__input" id="check1" type="checkbox" name="attraction" value="Devil's Bridge">
             <span>Мост Дьявола</span>
           </label>
-          <label class="checkbox-label bold" for="check2">
-            <input class="form-checkbox" id="check2" type="checkbox" name="attraction" value="Bell-Mountain">
+          <label class="checkbox__label bold" for="check2">
+            <input class="checkbox__input" id="check2" type="checkbox" name="attraction" value="Bell-Mountain">
             <span>Гора-Колокол</span>
           </label>
-          <label class="checkbox-label bold" for="check3">
-            <input class="form-checkbox" id="check3" type="checkbox" name="attraction" value="Slide Park">
+          <label class="checkbox__label bold" for="check3">
+            <input class="checkbox__input" id="check3" type="checkbox" name="attraction" value="Slide Park">
             <span>Слайд-парк</span>
           </label>
-          <label class="checkbox-label bold" for="check4">
-            <input class="form-checkbox" id="check4" type="checkbox" name="attraction" value="Red-rock">
+          <label class="checkbox__label bold" for="check4">
+            <input class="checkbox__input" id="check4" type="checkbox" name="attraction" value="Red-rock">
             <span>Красные скалы</span></label>
         </li>
       </ul>
-      <ul class="form-item">
-        <li class="form-item__title title-font">опишите свои эмоции:</li>
-        <li class="form-item__textarea">
-          <textarea class="form-textarea" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
+      <ul class="form__section">
+        <li class="form__title title-font">опишите свои эмоции:</li>
+        <li class="form__item form__item--textarea">
+          <textarea class="form__textarea" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
         </li>
       </ul>
-      <ul class="form-item">
+      <ul class="form__section">
         <li class="form-item__button">
           <button class="blue-button h2-font" type="button">отправить отзыв</button>
         </li>
@@ -143,7 +143,7 @@
   </section>
 </main>
 <footer class="page-footer wrapper">
-  <h2 class="contacts-title">#visitsedona</h2>
+  <h2 class="page-footer__title">#visitsedona</h2>
   <div class="page-footer__social social">
     <ul class="social__list">
       <li class="social__item">
