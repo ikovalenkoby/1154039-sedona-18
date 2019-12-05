@@ -1,10 +1,9 @@
-
-@h1-size:9vw;
-@h1-line:@h1-size+3;
-@h2-size:4vw;
-@h3-size:2vw;
-@h3-line:@h3-size+2;
-@usual-size:1.3vw;
+@h1-size: 9vw;
+@h1-line: @h1-size+3;
+@h2-size: 4vw;
+@h3-size: 2vw;
+@h3-line: @h3-size+2;
+@usual-size: 1.3vw;
 @copyright: 0.9vw;
 
 @font-face {
@@ -21,26 +20,15 @@
   font-weight: bold;
 }
 
-.h2-font {
-  font-size: @h2-size;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.title-font {
-  font-size: @h3-size;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.description {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  line-height: @h3-size;
-}
-
-.bold {
-  font-weight: bold;
-  text-transform: none;
+@font-face {
+  font-family: "FontAwesome";
+  src: url("@{fa-font-path}/fontawesome-webfont.eot?v=@{fa-version}");
+  src: url("@{fa-font-path}/fontawesome-webfont.eot?#iefix&v=@{fa-version}") format("embedded-opentype");
+  src: url("@{fa-font-path}/fontawesome-webfont.woff2?v=@{fa-version}") format("woff2");
+  src: url("@{fa-font-path}/fontawesome-webfont.woff?v=@{fa-version}") format("woff");
+  src: url("@{fa-font-path}/fontawesome-webfont.ttf?v=@{fa-version}") format("truetype");
+  src: url("@{fa-font-path}/fontawesome-webfont.svg?v=@{fa-version}#fontawesomeregular") format("svg");
+  // src: url("@{fa-font-path}/FontAwesome.otf") format("opentype"); // used when developing fonts
+  font-weight: normal;
+  font-style: normal;
 }
