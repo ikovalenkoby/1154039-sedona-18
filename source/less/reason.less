@@ -1,0 +1,31 @@
+@icon-size:75px;
+@icon-padding-right:50px;
+@clar-description-padding:@icon-size+@icon-padding-right;
+
+.reason__header {
+  padding: 0 @sum-side;
+}
+
+.reason__title {
+  padding: @block-bottom 0 @block-item-bottom;
+  text-align: center;
+  font-weight: bold;
+  font-size: @h3-size;
+  text-transform: uppercase;
+  color: @black-color;
+  letter-spacing: 1px;
+  line-height: @h3-line;
+
+  &--white {
+    color: @white-color;
+  }
+}
+
+.reason__description {
+  text-align: center;
+  padding-bottom: @block-item-bottom;
+
+  &:last-child {
+    padding-bottom: @block-bottom;
+  }
+}

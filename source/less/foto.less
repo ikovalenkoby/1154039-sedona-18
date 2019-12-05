@@ -1,0 +1,31 @@
+
+.foto__list {
+  padding: @block-item-bottom 0;
+  list-style: none;
+}
+
+.foto__item {
+  font-size: @usual-size;
+  text-align: left;
+  padding: 0 @main-block-side;
+  border-bottom: 1px solid @grey-color;
+}
+
+.foto__title {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-top: @block-item-bottom;
+}
+
+.foto__like {
+  line-height: @h3-line;
+  padding-bottom: @block-item-bottom;
+
+  &::before {
+    padding-right: 50px;
+    content: "";
+    background: url("../img/icon-like.svg") no-repeat;
+    background-size: 40px 40px;
+  }
+}

@@ -1,0 +1,111 @@
+@greyinput-color: rgb(242, 242, 242);
+@greyinput-hover-color: rgb(229, 229, 229);
+@greyinput-down-color: rgb(213, 213, 213);
+@label: 3vw;
+
+.form__section {
+  list-style: none;
+  padding: 2*@block-item-bottom 0;
+  border-bottom: 1px solid @grey-color;
+
+  & li {
+    margin: 0 @main-block-side;
+  }
+
+  & .form-item__button {
+    margin: 0;
+  }
+}
+
+.form__title {
+  text-align: center;
+}
+
+.form__item {
+  padding-top: 20px;
+  display: flex;
+  align-content: stretch;
+
+  &--contact {
+    flex-direction: column;
+  }
+
+  &--contact .form__label {
+    padding-left: 40px;
+  }
+}
+
+.form__label {
+  text-transform: uppercase;
+  padding-right: @main-block-side;
+  font-size: 3vw;
+  padding-top: 10px;
+  letter-spacing: 1px;
+}
+
+.form__text {
+  background: @greyinput-color;
+  font-size: @label;
+  padding: 8px 20px;
+  flex-basis: 50%;
+  border: 3px @greyinput-color solid;
+  outline: none;
+
+  &::placeholder {
+    font-weight: bold;
+    font-size: @label;
+    color: @black-color;
+  }
+
+  &:hover {
+    background: @greyinput-hover-color;
+    border: 3px @greyinput-hover-color solid;
+  }
+
+  &:focus {
+    background: @white-color;
+    border: 3px @greyinput-color solid;
+  }
+
+  &--phone,
+  &--email {
+    margin-top: 10px;
+  }
+}
+
+.form__text--phone {
+  background-image: url("../img/icon-phone.svg");
+  background-position: 98% 50%;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+.form__text--email {
+  background-image: url("../img/icon-mail.svg");
+  background-position: 98% 50%;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+.form__item--radiogroup,
+.form__item--checkbox {
+  padding-top: 20px;
+  flex-direction: column;
+}
+
+.form__textarea {
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  background: @greyinput-color;
+  padding: 20px;
+  overflow: auto;
+  height: 250px;
+
+  &::placeholder {
+    font-weight: bold;
+    font-size: @h3-size;
+    color: @black-color;
+  }
+}
