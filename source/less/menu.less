@@ -1,17 +1,20 @@
 @link-color-down: rgb(148, 185, 210);
 @border-color: rgb(103, 143, 168);
 @border-top-color: rgb(154, 194, 219);
-@a-size: 2vw;
+@a-size: 18px;
+@a-size-table: 14px;
 
 .menu {
   list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu__item a {
   display: block;
   color: @white-color;
   text-decoration: none;
-  line-height: 40px;
+  /* line-height: 40px;*/
   font-size: @a-size;
   text-transform: uppercase;
   font-weight: bold;
@@ -41,6 +44,25 @@
   }
 }
 
+.menu__item--logo {
+  & a {
+    border: none;
+    background-color: @white-color;
+    padding: 0;
+    height: 60px;
+  }
+
+  &:hover,
+  & a:hover {
+    background-color: @white-color;
+  }
+
+  &:active,
+  & a:active {
+    background-color: @white-color;
+  }
+}
+
 .menu__button:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
@@ -52,4 +74,80 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+
+@media (min-width: @tablet-width) {
+  .menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .menu__item a {
+    color: @black-color;
+    font-size: @a-size-table;
+    background-color: @white-color;
+    padding: 22px 0;
+    letter-spacing: 1px;
+    border: none;
+  }
+
+  .menu__item--last a {
+    border: none;
+  }
+
+  .menu__item {
+    background-color: @white-color;
+    text-align: center;
+    order: 0;
+
+    &:hover,
+    & a:hover {
+      background-color: @white-color;
+      color: @blue-color;
+    }
+
+    &:active,
+    & a:active {
+      background-color: @white-color;
+      color: @black-color;
+      opacity: 0.3;
+    }
+
+    &:nth-child(n+1) {
+      order: 1;
+    }
+  }
+
+  .menu__item--logo {
+    order: 0;
+
+    & a {
+      border: none;
+      background-color: @white-color;
+      padding: 0;
+      height: 60px;
+    }
+
+    &:hover,
+    & a:hover {
+      background-color: @white-color;
+    }
+
+    &:active,
+    & a:active {
+      background-color: @white-color;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    background: @bgdesktop;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }

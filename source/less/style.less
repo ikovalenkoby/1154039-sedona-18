@@ -1,5 +1,13 @@
 @import url("_variables.less");
 @import url("fonts.less");
+@import url("h2-font.less");
+@import url("title-font.less");
+@import url("description.less");
+@import url("bold.less");
+@import url("dash.less");
+@import url("visible-hidden.less");
+@import url("variables.less");
+@import url("font-awesome");
 @import url("menu.less");
 @import url("page-header.less");
 @import url("page-main.less");
@@ -17,23 +25,17 @@
 @import url("form.less");
 @import url("radiogroup.less");
 @import url("checkbox.less");
-@import url("variables.less");
-@import url("font-awesome");
 @import url("title-nomain.less");
 @import url("social.less");
 @import url("page-footer.less");
 @import url("copyright.less");
-@import url("h2-font.less");
-@import url("title-font.less");
-@import url("description.less");
-@import url("bold.less");
-@import url("dash.less");
-@import url("visible-hidden.less");
 
 body {
-  background: @white-color;
+  /* background: @white-color;*/
   font-family: "PT-Sans", sans-serif;
   font-size: @usual-size;
+  min-width: @mobile-width;
+  width: 100%;
 }
 
 * {
@@ -41,4 +43,18 @@ body {
   padding: 0;
   font-family: "PT-Sans", sans-serif;
   box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    background: @bgdesktop;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
