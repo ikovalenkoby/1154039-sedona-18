@@ -1,8 +1,7 @@
 
 .title-nomain {
   background: url("../img/bg-back-mobile@1x.jpg") bottom no-repeat;
-  background-size: 100%;
-  margin-top: -40px;
+  background-size: 100% 100%;
   width: 100%;
   text-align: center;
 
@@ -13,5 +12,23 @@
 
 .title-nomain__img {
   width: 50%;
-  padding: 100px 0;
+  padding: 50px 0 70px;
+}
+
+@media (min-width: @tablet-width) {
+  .title-nomain {
+    margin-top: 0;
+  }
+
+  .title-nomain__img {
+    width: 50%;
+    padding: 104px 0 120px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .title-nomain__img {
+    width: 50%;
+    padding: 100px 0 120px;
+  }
 }

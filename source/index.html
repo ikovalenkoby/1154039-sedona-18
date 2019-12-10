@@ -49,60 +49,73 @@
       <p class="reason__description description">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
     </header>
     <ul class="reason-list">
-      <li class="reason-list__item reason-list__item--reverse">
+      <li class="reason-list__item reason-list__item--flex">
         <div class="reason-list__desciption reason-list__desciption--blue">
-          <h3 class="reason__title reason__title--white">настоящий городок</h3>
+          <h3 class="reason-list__title reason-list__title--white">настоящий городок</h3>
           <p class="reason__description reason__description--white dash">1</p>
           <p class="reason__description reason__description--white description">седона не аттракцион для туристов, там
             течет своя жизнь</p>
         </div>
-        <img class="reason__img" width="100%" src="img/main-city-mobile@1x.jpg" alt="седона - американский город">
+        <div class="reason__wrapper">
+          <img class="reason__img" width="100%" height="100%" src="img/main-city-mobile@1x.jpg" alt="седона - американский город">
+        </div>
         <ul class="reason-clarification clarification">
           <li class="clarification__item clarification__item--house">
-            <b class="clarification__title title-font">жилье</b>
-            <p class="clarification__description description">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <div class="clarification__wrapper">
+              <b class="clarification__title title-font">жилье</b>
+              <p class="clarification__description description">рекомендуем пожить в настоящем мотеле, все как в
+                кино!</p>
+            </div>
           </li>
           <li class="clarification__item clarification__item--gifts">
-            <b class="clarification__title title-font">сувениры</b>
-            <p class="clarification__description description">не только китайского, но и местного производства!</p>
+            <div class="clarification__wrapper">
+              <b class="clarification__title title-font">сувениры</b>
+              <p class="clarification__description description">не только китайского, но и местного производства!</p>
+            </div>
           </li>
           <li class="clarification__item clarification__item--food">
-            <b class="clarification__title title-font">еда</b>
-            <p class="clarification__description description">всегда заказывайте фирменный бургер, вы не
-              разочаруетесь!</p>
+            <div class="clarification__wrapper">
+              <b class="clarification__title title-font">еда</b>
+              <p class="clarification__description description">всегда заказывайте фирменный бургер, вы не
+                разочаруетесь!</p>
+            </div>
           </li>
         </ul>
       </li>
-      <li class="reason-list__item">
+      <li class="reason-list__item reason-list__item--flex reason-list__item--reverse">
         <div class="reason-list__desciption reason-list__desciption--blue">
-          <h3 class="reason__title reason__title--white">там есть мост дьявола</h3>
+          <h3 class="reason-list__title reason-list__title--white">там есть мост дьявола</h3>
           <p class="reason__description reason__description--white dash">2</p>
           <p class="reason__description reason__description--white description">да, по нему можно пройти! если вы
             осмелитесь, конечно</p>
         </div>
-        <img class="reason__img" width="100%" src="img/main-bridge-mobile@1x.jpg" alt="мост дьявола">
-      </li>
-      <li class="reason-list__item border">
-        <div class="reason-list__desciption">
-          <h3 class="reason__title">небольшая площадь</h3>
-          <p class="reason__description dash description">3</p>
-          <p class="reason__description description">все интересные места находятся очень близко</p>
+        <div class="reason__wrapper">
+          <img class="reason__img" width="100%" height="100%" src="img/main-bridge-mobile@1x.jpg" alt="мост дьявола">
         </div>
       </li>
-      <li class="reason-list__item border">
-        <div class="reason-list__desciption">
-          <h3 class="reason__title">красивая дорога</h3>
-          <p class="reason__description dash description">4</p>
-          <p class="reason__description description">ехать в седону из лас-вегаса совсем не скучно!</p>
-        </div>
-      </li>
-      <li class="reason-list__item">
-        <div class="reason-list__desciption">
-          <h3 class="reason__title">мало туристов</h3>
-          <p class="reason__description dash description">5</p>
-          <p class="reason__description description">большинство едет в гранд каньон и толпится там</p>
-        </div>
-      </li>
+      <ul class="reason-list__wrapper">
+        <li class="reason-list__item ">
+          <div class="reason-list__desciption">
+            <h3 class="reason-list__title">небольшая площадь</h3>
+            <p class="reason__description dash description">3</p>
+            <p class="reason__description description border">все интересные места находятся очень близко</p>
+          </div>
+        </li>
+        <li class="reason-list__item">
+          <div class="reason-list__desciption">
+            <h3 class="reason-list__title">красивая дорога</h3>
+            <p class="reason__description dash description">4</p>
+            <p class="reason__description description border">ехать в седону из лас-вегаса совсем не скучно!</p>
+          </div>
+        </li>
+        <li class="reason-list__item">
+          <div class="reason-list__desciption">
+            <h3 class="reason-list__title">мало туристов</h3>
+            <p class="reason__description dash description">5</p>
+            <p class="reason__description description">большинство едет в гранд каньон и толпится там</p>
+          </div>
+        </li>
+      </ul>
     </ul>
   </section>
   <section class="search">

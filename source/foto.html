@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона - Фото</title>
   <link href="css/style.css" rel="stylesheet">
-  <link href="css/outline_foto.css" rel="stylesheet">
+  <meta name="viewport" content="device-width,initial-scale=1">
 </head>
 <body>
 <header class="page-header">
@@ -22,13 +22,15 @@
       <li class="menu__item menu__item--last">
         <a href="https://htmlacademy.ru/">html academy</a>
       </li>
+      <li class="menu__item menu__item--logo">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__img-logo" width="103" src="./img/logo-sedona-mobile.svg" alt="Sedona">
+        </a>
+        <button class="menu__button" type="button"><span class="visible-hidden">Открыть окно</span>
+        </button>
+      </li>
     </ul>
   </nav>
-  <a class="page-header__logo" href="index.html">
-    <img class="page-header__img-logo" width="150" src="./img/logo-sedona-mobile.svg" alt="Sedona">
-  </a>
-  <button class="menu__button" type="button"><span class="visible-hidden">Открыть окно</span>
-  </button>
 </header>
 <main class="page-main">
   <section class="title-nomain">
@@ -45,41 +47,49 @@
     </header>
     <ul class="foto__list">
       <li class="foto__item">
-        <a class="foto-link" href="https://via.placeholder.com/150x150">
-          <img class="foto-img" width="100%" src="img/photo-sunset-mobile@1x.jpg" alt="живописные пейзажи седоны"></a>
-        <div class="foto-description-wrapper">
-          <p class="foto__title">Неродные просторы</p>
-          <p class="foto__description">Автор фото: Борис</p>
+        <a class="foto__link" href="https://via.placeholder.com/150x150">
+          <img class="foto__img" width="100%" src="img/photo-sunset-mobile@1x.jpg" alt="живописные пейзажи седоны"></a>
+        <div class="foto__wrapper">
+          <div class="foto__col">
+            <p class="foto__title">Неродные просторы</p>
+            <p class="foto__description">Автор фото: Борис</p>
+          </div>
           <p class="foto__like">
             <b class="sum-like icon-like">1350</b>
           </p>
         </div>
       </li>
       <li class="foto__item">
-        <a href="https://via.placeholder.com/150x150" class="foto-link">
-          <img class="foto-img" width="100%" src="img/photo-cactus-mobile@1x.jpg" alt="растительность"></a>
-        <div class="foto-description-wrapper">
-          <b class="foto__title">местная растительность</b>
-          <p class="foto__description">Автор фото: Сергей</p>
+        <a href="https://via.placeholder.com/150x150" class="foto__link">
+          <img class="foto__img" width="100%" src="img/photo-cactus-mobile@1x.jpg" alt="растительность"></a>
+        <div class="foto__wrapper">
+          <div class="foto__col">
+            <b class="foto__title">местная растительность</b>
+            <p class="foto__description">Автор фото: Сергей</p>
+          </div>
           <p class="foto__like"><b class="sum-like icon-like">143</b></p></div>
       </li>
       <li class="foto__item">
-        <a href="https://via.placeholder.com/150x150" class="foto-link">
-          <img class="foto-img" width="100%" src="img/photo-roads-mobile@1x.jpg" alt="южная дорога к седоне"></a>
-        <div class="foto-description-wrapper">
-          <p class="foto__title">дорога на север</p>
-          <p class="foto__description">Автор фото: петр</p>
+        <a href="https://via.placeholder.com/150x150" class="foto__link">
+          <img class="foto__img" width="100%" src="img/photo-roads-mobile@1x.jpg" alt="южная дорога к седоне"></a>
+        <div class="foto__wrapper">
+          <div class="foto__col">
+            <p class="foto__title">дорога на север</p>
+            <p class="foto__description">Автор фото: Петр</p>
+          </div>
           <p class="foto__like">
             <b class="sum-like icon-like">96</b>
           </p>
         </div>
       </li>
       <li class="foto__item">
-        <a href="https://via.placeholder.com/150x150" class="foto-link">
-          <img class="foto-img" width="100%" src="img/photo-bridge-mobile@1x.jpg" alt="мост дьявола"></a>
-        <div class="foto-description-wrapper">
-          <p class="foto__title">мост дьявола</p>
-          <p class="foto__description">Автор фото: Антон</p>
+        <a href="https://via.placeholder.com/150x150" class="foto__link">
+          <img class="foto__img" width="100%" src="img/photo-bridge-mobile@1x.jpg" alt="мост дьявола"></a>
+        <div class="foto__wrapper">
+          <div class="foto__col">
+            <p class="foto__title">мост дьявола</p>
+            <p class="foto__description">Автор фото: Антон</p>
+          </div>
           <p class="foto__like"><b class="sum-like icon-like">254</b></p>
         </div>
       </li>

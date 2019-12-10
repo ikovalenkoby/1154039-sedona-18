@@ -117,8 +117,12 @@
       opacity: 0.3;
     }
 
-    &:nth-child(n+1) {
+    &:nth-child(n+3) {
       order: 1;
+    }
+
+    &:last-child {
+      order: 0;
     }
   }
 
@@ -141,13 +145,5 @@
     & a:active {
       background-color: @white-color;
     }
-  }
-}
-
-@media (min-width: @desktop-width) {
-  body {
-    background: @bgdesktop;
-    max-width: 1200px;
-    margin: 0 auto;
   }
 }

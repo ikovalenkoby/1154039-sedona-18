@@ -1,6 +1,12 @@
 
 .description {
   text-transform: uppercase;
-  letter-spacing: 1px;
-  line-height: @h3-size;
+  letter-spacing: 0;
+  line-height: @h3-line;
+}
+
+@media (min-width: @tablet-width) {
+  .description {
+    line-height: @h2-size;
+  }
 }
