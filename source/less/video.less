@@ -1,17 +1,22 @@
 
+.video {
+  margin-bottom: 80px;
+}
+
 .video__description {
-  padding: 0 @block-side @block-bottom @block-side;
-  border-bottom: 1px solid @grey-color;
+  padding: 0 40px @block-bottom 40px;
   text-align: center;
   line-height: @h3-line;
 }
 
 .video__buttons {
-  padding: @block-item-bottom @main-block-side 0 @main-block-side;
+  padding: @main-block-side @main-block-side 0 @main-block-side;
+  background: @bgdesktop;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+  margin: 0 @main-block-side;
 }
 
 .video__icon {
@@ -21,16 +26,38 @@
 
   &--replay {
     background: url("../img/icon-video-replay.svg") no-repeat;
-    background-size: 40px 40px;
+    background-size: 20px 20px;
   }
 
   &--cc {
     background: url("../img/icon-video-subtitles.svg") no-repeat;
-    background-size: 40px 40px;
+    background-size: 20px 20px;
   }
 
   &--fullsize {
     background: url("../img/icon-video-fullscreen.svg") no-repeat;
-    background-size: 40px 40px;
+    background-size: 20px 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .video {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 60px;
+    justify-content: center;
+    padding-bottom: 75px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video {
+    margin: 0;
+  }
+
+  .video__title {
+    width: 100%;
+    text-align: center;
   }
 }

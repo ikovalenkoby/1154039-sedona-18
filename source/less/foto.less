@@ -1,6 +1,6 @@
 
 .foto__list {
-  padding: @main-block-side 0 @block-item-bottom 0;
+  padding: @main-block-side 0 @main-block-side 0;
   list-style: none;
 }
 
@@ -9,6 +9,7 @@
   text-align: left;
   padding: 0 @main-block-side;
   border-bottom: 1px solid @grey-color;
+  margin-bottom: @main-block-side;
 }
 
 .foto__title {
@@ -48,6 +49,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 60px;
+    padding-bottom: 50px;
   }
 
   .foto__item {
@@ -55,14 +57,19 @@
     border-bottom: none;
     background: @bgdesktop;
     padding: 0;
+    margin-bottom: 0;
 
     &:first-child {
       width: 100%;
     }
+
+    &:first-child .foto__wrapper {
+      padding-right: 20px;
+    }
   }
 
   .foto__wrapper {
-    padding: 25px 20px;
+    padding: 25px 30px 25px 20px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -86,9 +93,20 @@
   .foto__item {
     width: 33%;
     flex-grow: 1;
+    position: relative;
 
     &:first-child {
       width: 100%;
     }
+  }
+
+  .foto__wrapper {
+    position: absolute;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    color: white;
+    width: 100%;
+    padding: 30px 20px;
   }
 }
