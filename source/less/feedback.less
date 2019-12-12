@@ -12,5 +12,19 @@
 
 .feedback__description {
   text-align: center;
-  padding: 0 @padding-description;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback__header {
+    padding: @block-bottom 165px 0;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback__header {
+    padding: @block-bottom 360px 0;
+    border-bottom: none;
+  }
 }
