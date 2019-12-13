@@ -1,9 +1,23 @@
 
 .search__description {
-  padding: 0 @sum-side @block-bottom @sum-side;
+  padding: 0 @main-block-side @block-bottom @main-block-side;
   text-align: center;
 }
 
 .search__map {
   padding-bottom: @block-bottom;
+}
+
+@media (min-width: @tablet-width) {
+  .search__description {
+    padding-right: @sum-side;
+    padding-left: @sum-side;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .search__description {
+    padding-right: 350px;
+    padding-left: 350px;
+  }
 }
