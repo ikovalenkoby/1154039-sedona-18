@@ -7,6 +7,8 @@
   margin: 0 @main-block-side @block-item-bottom @main-block-side;
   text-align: center;
   padding: 20px 0;
+  font-weight: bold;
+  border: none;
 
   &:hover {
     background-color: @bglink-color-hover;
@@ -21,12 +23,16 @@
     opacity: 0.1;
     color: @link-color-down;
   }
+
+  &--but {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .blue-button {
-    margin-right: @sum-side;
-    margin-left: @sum-side;
+    width: 325px;
   }
 }
 

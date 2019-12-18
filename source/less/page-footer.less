@@ -12,13 +12,14 @@
 }
 
 .page-footer__copyright {
-  margin: @block-item-bottom @main-block-side;
+  margin: @block-item-bottom @main-block-side 0 @main-block-side;
   text-align: center;
   font-size: @usual-size;
   text-transform: uppercase;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-bottom: @block-item-bottom;
 }
 
 @media (min-width: @tablet-width) {
@@ -28,6 +29,7 @@
 
   .page-footer__copyright {
     margin: 0;
+    padding-bottom: 0;
   }
 }
 

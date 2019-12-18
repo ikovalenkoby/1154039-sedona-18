@@ -45,7 +45,7 @@
         посещенных вами достопримечательностях</p>
     </header>
     <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post" name="feedback-form">
-      <ul class="form__section">
+      <ul class="form__section form__section--name">
         <li class="form__title title-font">представьтесь:</li>
         <li class="form__item">
           <label class="form__label" for="name">имя*:</label>
@@ -60,8 +60,8 @@
           <input class="form__text" type="text" id="farther_name" placeholder="Александрович"/>
         </li>
       </ul>
-      <ul class="form__section">
-        <li class="form__title title-font">контактная информация:</li>
+      <ul class="form__section form__section--contact">
+        <li class="form__title form__title--dash"><p class="form__p title-font">контактная информация:</p></li>
         <li class="form__item form__item--contact">
           <label class="form__label" for="phone-number">контактный телефон*:</label>
           <input class="form__text form__text--phone" type="tel" id="phone-number" required placeholder="Введите телефон"/>
@@ -71,7 +71,7 @@
           <input class="form__text form__text--email" type="email" id="email" required placeholder="Введите e-mail"/>
         </li>
       </ul>
-      <ul class="form__section">
+      <ul class="form__section form__section--radiogroup">
         <li class="form__title title-font">ваше общее впечатление:</li>
         <li class="form__item form__item--radiogroup radiogroup">
           <div class="radiogroup__wrapper">
@@ -94,8 +94,8 @@
           </div>
         </li>
       </ul>
-      <ul class="form__section">
-        <li class="form__title title-font">Посещенные достопримечательности:</li>
+      <ul class="form__section form__section--checkbox">
+        <li class="form__title form__title--dash"><p class="form__p title-font">Посещенные достопримечательности:</p></li>
         <li class="form__item form__item--checkbox checkbox">
           <label class="checkbox__label bold" for="check1">
             <input class="checkbox__input" id="check1" type="checkbox" name="attraction" value="Devil's Bridge">
@@ -114,15 +114,18 @@
             <span>Красные скалы</span></label>
         </li>
       </ul>
-      <ul class="form__section">
-        <li class="form__title title-font">опишите свои эмоции:</li>
+      <ul class="form__section form__section--textarea">
+        <li class="form__title form__title--dash form__title--textarea"><p class="form__p title-font">опишите свои эмоции:</p></li>
         <li class="form__item form__item--textarea">
           <textarea class="form__textarea" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
         </li>
       </ul>
-      <ul class="form__section">
-        <li class="form-item__button">
-          <button class="blue-button h2-font" type="button">отправить отзыв</button>
+      <ul class="form__section form__section--button">
+        <li class="form-item form-item--button">
+          <button class="blue-button  blue-button--but h2-font" type="button">отправить отзыв</button>
+        </li>
+        <li class="form-item form-item--prim">
+          <p>* - обязательные поля</p>
         </li>
       </ul>
       <ul class="form-item visible-hidden">

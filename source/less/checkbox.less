@@ -1,22 +1,21 @@
 
 .checkbox__label {
-  font-size: 3vw;
+  font-size: 16px;
   padding-top: 10px;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  margin: 10px 25%;
+  margin-bottom: 10px;
 }
 
 .checkbox__input {
   position: relative;
   appearance: none;
   font-size: @h2-size;
-  width: 1em;
-  height: 1em;
+  width: 55px;
+  height: 55px;
   margin: 0;
   outline: none;
-  font-family: "FontAwesome", sans-serif;
   transition: 300ms ease-out;
 
   &::after {
@@ -24,8 +23,9 @@
     background: @greyinput-color;
     display: inline-block;
     text-align: center;
-    width: 1em;
-    height: 1em;
+    width: 56px;
+    height: 56px;
+    border-radius: 3px;
   }
 
   &:hover::after {
@@ -43,6 +43,28 @@
   }
 
   + span {
-    margin-left: 1.35em;
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .checkbox__label {
+    font-size: 18px;
+    padding-top: 0;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    width: 200px;
+
+    &[for="check1"],
+    &[for="check3"] {
+      margin-right: 55px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback__header {
+    padding: @block-bottom 360px 0;
+    border-bottom: none;
   }
 }

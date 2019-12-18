@@ -6,8 +6,6 @@
 @import url("bold.less");
 @import url("dash.less");
 @import url("visible-hidden.less");
-@import url("variables.less");
-@import url("font-awesome");
 @import url("menu.less");
 @import url("page-header.less");
 @import url("page-main.less");
@@ -32,17 +30,22 @@
 @import url("border.less");
 @import url("wrapper.less");
 
+html {
+  background: @bgdesktop;
+}
+
 body {
   /* background: @white-color;*/
   font-family: "PT-Sans", sans-serif;
   font-size: @usual-size;
   min-width: @mobile-width;
-  width: 100%;
+  width: @mobile-width;
+  background: @white-color;
+  margin: 0 auto;
 }
 
 img {
   max-width: 100%;
-  height: auto;
 }
 
 * {
@@ -54,8 +57,9 @@ img {
 
 @media (min-width: @tablet-width) {
   body {
-    max-width: 768px;
+    max-width: @tablet-width;
     margin: 0 auto;
+    width: @tablet-width;
   }
 }
 
@@ -63,5 +67,7 @@ img {
   body {
     max-width: 1200px;
     margin: 0 auto;
+    width: @desktop-width;
+    box-shadow: -5px 0 15px -5px rgba(0, 1, 1, 0.2), 5px 0 15px -5px rgba(0, 1, 1, 0.2);
   }
 }
