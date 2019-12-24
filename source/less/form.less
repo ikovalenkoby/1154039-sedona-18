@@ -56,6 +56,7 @@
   font-size: @usual-size;
   padding-top: 10px;
   letter-spacing: 1px;
+  color: @prim;
 }
 
 .form__text {
@@ -157,9 +158,13 @@
 
   .form__text {
     background: @greyinput-color;
-    font-size: 16px;
     padding: 14px 20px;
     width: 20%;
+  }
+
+  .form__text,
+  .form__text::placeholder {
+    font-size: 18px;
   }
 
   .form__title {
@@ -261,8 +266,11 @@
 }
 
 @media (min-width: @desktop-width) {
-  .feedback__header {
-    padding: @block-bottom 360px 0;
-    border-bottom: none;
+  .form__title--radiogroup {
+    padding-left: 80px;
   }
+
+  .form__section--name {
+      width: 41.5%;
+    }
 }
