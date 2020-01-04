@@ -24,7 +24,11 @@
       </li>
       <li class="menu__item menu__item--logo">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__img-logo" width="103" src="./img/logo-sedona-mobile.svg" alt="Sedona">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="./img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/logo-sedona-tablet.svg">
+            <img class="page-header__img-logo" width="103" src="./img/logo-sedona-mobile.svg" alt="Sedona">
+          </picture>
         </a>
         <button class="menu__button" type="button"><span class="visible-hidden">Открыть окно</span>
         </button>
@@ -36,6 +40,7 @@
   <section class="title-nomain">
     <h1 class="visible-hidden">sedone</h1>
     <img class="title-nomain__img" src="img/text-sedona.svg" width="50%">
+    <div class="title-nomain__triangle" width="100%" ></div>
   </section>
   <section class="feedback">
     <header class="feedback__header">
@@ -63,12 +68,19 @@
       <ul class="form__section form__section--contact">
         <li class="form__title form__title--dash"><p class="form__p title-font">контактная информация:</p></li>
         <li class="form__item form__item--contact">
-          <label class="form__label" for="phone-number">контактный телефон*:</label>
-          <input class="form__text form__text--phone" type="tel" id="phone-number" required placeholder="Введите телефон"/>
+          <label class="form__label form__label--contact" for="phone-number">
+            <span class="form__span form__span--hidden">контактный</span> телефон*:</label>
+          <div class="form__wrapper">
+            <input class="form__text form__text--phone" type="tel" id="phone-number" required placeholder="Введите телефон"/>
+            <span class="form__span form__span--phone"> </span>
+          </div>
         </li>
         <li class="form__item form__item--contact">
-          <label class="form__label" for="email">электронная почта*:</label>
-          <input class="form__text form__text--email" type="email" id="email" required placeholder="Введите e-mail"/>
+          <label class="form__label form__label--contact" for="email">электронная почта*:</label>
+          <div class="form__wrapper">
+            <input class="form__text form__text--email" type="email" id="email" required placeholder="Введите e-mail"/>
+            <span class="form__span form__span--email"> </span>
+          </div>
         </li>
       </ul>
       <ul class="form__section form__section--radiogroup">
@@ -95,7 +107,8 @@
         </li>
       </ul>
       <ul class="form__section form__section--checkbox">
-        <li class="form__title form__title--dash"><p class="form__p title-font">Посещенные достопримечательности:</p></li>
+        <li class="form__title form__title--dash"><p class="form__p title-font">Посещенные достопримечательности:</p>
+        </li>
         <li class="form__item form__item--checkbox checkbox">
           <label class="checkbox__label bold" for="check1">
             <input class="checkbox__input" id="check1" type="checkbox" name="attraction" value="Devil's Bridge">
@@ -115,14 +128,16 @@
         </li>
       </ul>
       <ul class="form__section form__section--textarea">
-        <li class="form__title form__title--dash form__title--textarea"><p class="form__p title-font">опишите свои эмоции:</p></li>
+        <li class="form__title form__title--dash form__title--textarea"><p class="form__p title-font">опишите свои
+          эмоции:</p></li>
         <li class="form__item form__item--textarea">
           <textarea class="form__textarea" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
         </li>
       </ul>
       <ul class="form__section form__section--button">
         <li class="form-item form-item--button">
-          <button class="blue-button  blue-button--but h2-font" type="button">отправить отзыв</button>
+          <!--<button class="blue-button  blue-button--but h2-font" type="button">отправить отзыв</button>-->
+          <input class="blue-button  blue-button--but h2-font" type="submit" value="отправить отзыв">
         </li>
         <li class="form-item form-item--prim">
           <p>* - обязательные поля</p>
@@ -130,7 +145,8 @@
       </ul>
       <ul class="form-item visible-hidden">
         <li class="form-item__title title-font">Ваш отзыв отправлен!</li>
-        <li class="form-item__description description">спасибо за ваше участие, ваш отзыв уже поступил к нам. в ближайшее время мы опубликуем его на сайте.
+        <li class="form-item__description description">спасибо за ваше участие, ваш отзыв уже поступил к нам. в
+          ближайшее время мы опубликуем его на сайте.
         </li>
         <li class="form-item__button">
           <button class="blue-button" type="button">закрыть окно</button>
@@ -138,7 +154,8 @@
       </ul>
       <ul class="form-item visible-hidden">
         <li class="form-item__title title-font">что-то пошло не так!</li>
-        <li class="form-item__description description">проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        <li class="form-item__description description">проверьте поля, выделенные красным, скорее всего вы забыли их
+          заполнить
         </li>
         <li class="form-item__button">
           <button class="blue-button" type="button">ок</button>

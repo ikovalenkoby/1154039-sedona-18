@@ -24,7 +24,11 @@
       </li>
       <li class="menu__item menu__item--logo">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__img-logo" width="103" src="./img/logo-sedona-mobile.svg" alt="Sedona">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="./img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/logo-sedona-tablet.svg">
+            <img class="page-header__img-logo" width="103" src="./img/logo-sedona-mobile.svg" alt="Sedona">
+          </picture>
         </a>
         <button class="menu__button" type="button"><span class="visible-hidden">Открыть окно</span>
         </button>
@@ -36,6 +40,7 @@
   <section class="title-nomain">
     <h1 class="visible-hidden">sedone</h1>
     <img class="title-nomain__img" src="img/text-sedona.svg" width="50%">
+    <div class="title-nomain__triangle" width="100%" ></div>
   </section>
   <section class="foto">
     <header class="foto-header">
@@ -99,7 +104,8 @@
     <p class="video__description description">смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
       очередной раз!</p>
     <div class="video__wrapper">
-      <img src="img/video-mobile@1x.jpg" class="video__img">
+      <img class="video__img" src="img/video-mobile@1x.jpg" alt="Видео Седоны">
+      <div class="video__line-wrapper"><div class="video__line"><span class="video__circle"></span></div></div>
       <div class="video__buttons">
         <button class="video__icon video__icon--replay left" type="button"></button>
         <button class="video__icon video__icon--cc " type="button"></button>

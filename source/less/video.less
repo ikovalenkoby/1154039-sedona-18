@@ -18,7 +18,7 @@
 }
 
 .video__buttons {
-  padding: @main-block-side 0 0 0;
+  padding: 23px 0 2px 0;
   background: @bgdesktop;
   display: flex;
   flex-direction: row;
@@ -51,6 +51,39 @@
   }
 }
 
+.video__line-wrapper {
+  position: absolute;
+  height: 45px;
+  background: rgba(0, 0, 0, 0.6);
+  width: 87.2%;
+  bottom: 65px;
+  left: 20px;
+  padding: 0 22px;
+}
+
+.video__line {
+  position: absolute;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.2);
+  width: 83%;
+  left: 22px;
+  top: 22px;
+}
+
+.video__circle {
+  background: @white-color;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  bottom: -3px;
+  left: 36px;
+}
+
+.video__wrapper {
+  position: relative;
+}
+
 @media (min-width: @tablet-width) {
   .video {
     display: flex;
@@ -77,6 +110,63 @@
   .video__img {
     width: 100%;
   }
+
+  .video__icon {
+    width: 30px;
+    height: 40px;
+    border: none;
+    margin-right: 20px;
+
+    &--replay {
+      background: url("../img/icon-video-replay.svg") no-repeat;
+      background-size: 22px 21px;
+      margin-right: auto;
+      margin-left: 35px;
+    }
+
+    &--cc {
+      background: url("../img/icon-video-subtitles.svg") no-repeat;
+      background-size: 32px 20px;
+      width: 32px;
+      margin-right: 32px;
+    }
+
+    &--fullsize {
+      background: url("../img/icon-video-fullscreen.svg") no-repeat;
+      background-size: 20px 20px;
+      margin-right: 35px;
+    }
+  }
+
+  .video__circle {
+    background: @white-color;
+    border-radius: 50%;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    bottom: -3px;
+    left: 36px;
+  }
+
+  .video__line {
+    position: absolute;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    left: 0;
+    top: 22px;
+  }
+
+  .video__line-wrapper {
+    position: absolute;
+    height: 45px;
+    background: rgba(0, 0, 0, 0);
+    width: 60%;
+    bottom: 10px;
+    left: 93px;
+    padding: 0;
+    z-index: 100;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -85,8 +175,17 @@
     margin-bottom: 120px;
   }
 
+  .video__wrapper {
+    width: 800px;
+    position: relative;
+  }
+
   .video__title {
     width: 100%;
     text-align: center;
+  }
+
+  .video__line-wrapper {
+    width: 67.5%;
   }
 }

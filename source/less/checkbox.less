@@ -25,7 +25,7 @@
     text-align: center;
     width: 56px;
     height: 56px;
-    border-radius: 3px;
+    border-radius: 5px;
   }
 
   &:hover::after {
@@ -34,10 +34,10 @@
 
   &:checked::after {
     font-weight: 900;
-    content: ""; //
+    content: "";
     color: @black-color;
     background: @greyinput-down-color url("../img/icon-tick.svg") no-repeat;
-    background-size: 0.7em;
+    background-size: 24px;
     background-position: center;
     font-size: 1em;
   }
@@ -63,5 +63,7 @@
 }
 
 @media (min-width: @desktop-width) {
-
+  .checkbox__label {
+    width: auto;
+  }
 }
