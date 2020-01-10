@@ -24,11 +24,16 @@
   &:last-child {
     padding-bottom: @block-bottom-sm;
   }
+
+  &--white {
+    color: @white-color;
+  }
 }
 
 .reason__wrapper {
   width: 100%;
-  height: 260px;
+  max-height: 256px;
+  overflow: hidden;
 }
 
 @media (min-width: @tablet-width) {
@@ -41,8 +46,8 @@
   }
 
   .reason__wrapper {
-    width: 70%;
-    height: 240px;
+    width: calc(100% * 2 / 3);
+    display: flex;
   }
 }
 
@@ -51,9 +56,5 @@
     padding-left: 240px;
     padding-right: 240px;
     line-height: @h3-line;
-  }
-
-  .reason__wrapper {
-    width: 70%;
   }
 }
