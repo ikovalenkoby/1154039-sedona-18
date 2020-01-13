@@ -33,17 +33,23 @@
 @media (min-width: @tablet-width) {
   .blue-button {
     width: 325px;
+
+    &--search {
+      margin: 0 auto 20px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .blue-button {
-    margin-right: 350px;
-    margin-left: 350px;
-
     &--but {
       margin: 0;
       width: 100%;
+    }
+
+    &--search {
+      margin: 0 auto 20px;
+      width: calc(458 * 100% / 1200);
     }
   }
 }
