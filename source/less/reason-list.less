@@ -9,13 +9,17 @@
   font-size: @h3-size;
   text-transform: uppercase;
   color: @black-color;
-  letter-spacing: 1px;
+  letter-spacing: 0.1px;
   line-height: @h3-line;
-  padding: @block-bottom 0 10px;
+  padding: 35px 0 10px;
   text-align: center;
 
   &--white {
     color: @white-color;
+  }
+
+  &--padding {
+    padding-top: 40px;
   }
 }
 
@@ -26,10 +30,15 @@
   &--blue {
     background-color: @blue-color;
     color: @white-color;
+    padding-bottom: 20px;
   }
 }
 
 .reason-list__item {
+  &--triangle {
+    background-color: rgb(129, 179, 210);
+  }
+
   &:last-child {
     margin-bottom: 32px;
   }

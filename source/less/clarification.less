@@ -1,6 +1,6 @@
 
 .clarification {
-  padding: @block-bottom @main-block-side 15px @main-block-side;
+  padding: 25px @main-block-side 20px @main-block-side;
   list-style: none;
   background: @white-color;
   display: flex;
@@ -8,7 +8,6 @@
 }
 
 .clarification__item {
-  margin-bottom: 10px;
   display: flex;
   flex-direction: row;
 
@@ -21,13 +20,17 @@
     padding-right: @icon-padding-right;
   }
 
+  &--gifts {
+    margin-bottom: 6px;
+  }
+
   &--gifts::before {
     content: "";
     background: url("../img/icon-gift.svg") no-repeat; /* Параметры фона */
     width: @icon-size;
     height: @icon-size;
     background-size: @icon-size @icon-size;
-    padding-right: @icon-padding-right;
+    padding-right: 26px;
   }
 
   &--food::before {
@@ -52,11 +55,12 @@
 }
 
 .clarification__wrapper {
-  padding: 10px 0;
+  padding: 11px 0;
 }
 
 .clarification__description {
   padding-top: 15px;
+  line-height: 22px;
 }
 
 @media (min-width: @tablet-width) {
