@@ -12,9 +12,15 @@
 
 .copyright__link {
   display: block;
-  background: url("../img/logo-htmlacademy.svg") no-repeat;
   width: 25px;
   height: 35px;
-  background-position: center;
-  background-size: 25px 35px;
+  color: @black-color;
+
+  &:hover {
+    color: @blue-color;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }

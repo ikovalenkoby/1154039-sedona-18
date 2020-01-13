@@ -29,6 +29,7 @@
 @import url("copyright.less");
 @import url("border.less");
 @import url("wrapper.less");
+@import url("wrap.less");
 
 html {
   background: @bgdesktop;
@@ -42,6 +43,17 @@ body {
   width: @mobile-width;
   background: @white-color;
   margin: 0 auto;
+}
+
+.bg {
+  position: absolute;
+  z-index: 2000;
+  background-image: url("../img/sedona-index-mobile.jpg");
+  opacity: 0.3;
+  width: 100%;
+  height: 3875.16px;
+  top: 0;
+  left: 0;
 }
 
 img {

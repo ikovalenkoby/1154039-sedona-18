@@ -14,40 +14,22 @@
   height: 50px;
   display: block;
   margin-right: 10px;
+  text-align: center;
+  padding-top: 18px;
+  color: white;
+  background: @blue-color;
 
-  &--twitter {
-    background: @blue-color url("../img/icon-twitter.svg") no-repeat;
-    background-position: center;
-    background-size: 20px 20px;
+  &:hover {
+    background: @bglink-color-hover;
+    color: white;
   }
 
-  &--twitter:hover {
-    background: @bglink-color-hover url("../img/icon-twitter.svg") no-repeat;
-    background-position: center;
-    background-size: 20px 20px;
+  &:active {
+    background: @bglink-color-hover;
+    color: rgba(255, 255, 255, 0.3);
   }
 
   &--facebook {
-    background: @blue-color url("../img/icon-facebook.svg") no-repeat;
-    background-position: center;
-    background-size: 20px 20px;
-  }
-
-  &--facebook:hover {
-    background: @bglink-color-hover  url("../img/icon-facebook.svg") no-repeat;
-    background-position: center;
-    background-size: 20px 20px;
-  }
-
-  &--youtube {
-    background: @blue-color url("../img/icon-youtube.svg") no-repeat;
-    background-position: center;
-    background-size: 20px 20px;
-  }
-
-  &--youtube:hover {
-    background: @bglink-color-hover url("../img/icon-youtube.svg") no-repeat;
-    background-position: center;
-    background-size: 40px 40px;
+    padding-top: 14px;
   }
 }
