@@ -13,7 +13,7 @@
   width: 45px;
   height: 50px;
   display: block;
-  margin-right: 10px;
+  margin-right: 7px;
   text-align: center;
   padding-top: 18px;
   color: white;
@@ -31,5 +31,24 @@
 
   &--facebook {
     padding-top: 14px;
+  }
+
+  &--youtube {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    margin: 0;
+  }
+
+  .social__link {
+    width: 47px;
+    margin-right: 6px;
+
+    &--youtube {
+      margin-right: 6px;
+    }
   }
 }

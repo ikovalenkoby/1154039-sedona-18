@@ -1,8 +1,25 @@
 
+.wrap {
+  &--mb {
+    white-space: pre-line;
+    display: block;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .wrap {
     white-space: pre-line;
     display: block;
+
+    &--mb {
+      white-space: pre-line;
+      display: inline;
+    }
+
+    &--tb {
+      white-space: pre-line;
+      display: block;
+    }
   }
 }
 
@@ -10,5 +27,15 @@
   .wrap {
     white-space: pre-line;
     display: block;
+
+    &--tb {
+      white-space: pre-line;
+      display: inline;
+    }
+
+    &--dt {
+      white-space: pre-line;
+      display: block;
+    }
   }
 }

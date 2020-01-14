@@ -1,17 +1,30 @@
 
+.search__title {
+  padding-bottom: 15px;
+}
+
 .search__description {
-  padding: 0 @main-block-side @block-bottom @main-block-side;
+  padding: 0 @main-block-side 35px @main-block-side;
   text-align: center;
 }
 
 .search__map {
-  padding-bottom: @block-bottom;
+  padding-bottom: 33px;
 }
 
 @media (min-width: @tablet-width) {
   .search__description {
     padding-right: @sum-side;
     padding-left: @sum-side;
+    line-height: 24px;
+  }
+
+  .search__map {
+    padding-bottom: 28px;
+  }
+
+  .search__title {
+    padding-bottom: 30px;
   }
 }
 
