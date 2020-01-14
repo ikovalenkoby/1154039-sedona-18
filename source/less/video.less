@@ -1,12 +1,16 @@
 
 .video {
-  margin-bottom: 80px;
+  margin-bottom: 74px;
+}
+
+.video__title {
+  padding-bottom: 30px;
 }
 
 .video__description {
-  padding: 0 40px @block-bottom 40px;
+  padding: 0 40px 35px 40px;
   text-align: center;
-  line-height: @h3-line;
+  line-height: 24px;
 }
 
 .video__img {
@@ -18,7 +22,7 @@
 }
 
 .video__buttons {
-  padding: 23px 0 2px 0;
+  padding: 0;
   background: @bgdesktop;
   display: flex;
   flex-direction: row;
@@ -29,25 +33,20 @@
 
 .video__icon {
   width: 30px;
-  height: 40px;
+  height: 65px;
   border: none;
   margin-right: 20px;
-
-  &--replay {
-    background: url("../img/icon-video-replay.svg") no-repeat;
-    background-size: 20px 20px;
-    margin-right: auto;
-    margin-left: 25px;
-  }
+  background: @bgdesktop;
+  color: @video-icon;
+  padding-top: 5px;
 
   &--cc {
-    background: url("../img/icon-video-subtitles.svg") no-repeat;
-    background-size: 20px 20px;
+    margin-right: 25px;
   }
 
-  &--fullsize {
-    background: url("../img/icon-video-fullscreen.svg") no-repeat;
-    background-size: 20px 20px;
+  &--replay {
+    margin-left: 18px;
+    margin-right: auto;
   }
 }
 

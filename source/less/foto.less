@@ -1,6 +1,6 @@
 
 .foto__list {
-  padding: @main-block-side 0 @main-block-side 0;
+  padding: @main-block-side 0 19px 0;
   list-style: none;
 }
 
@@ -15,8 +15,8 @@
 .foto__title {
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 1px;
-  padding-top: 10px;
+  padding-top: 11px;
+  display: block;
 }
 
 .foto__title,
@@ -26,17 +26,16 @@
 
 .foto__like {
   line-height: @h3-line;
-  padding-bottom: @main-block-side;
+  padding-bottom: 17px;
   display: flex;
   flex-direction: row;
   padding-top: 5px;
+  color: @like-icon;
+}
 
-  &::before {
-    padding-right: 30px;
-    content: "";
-    background: url("../img/icon-like.svg") no-repeat;
-    background-size: 20px 20px;
-  }
+.foto__sum {
+  padding-left: 13px;
+  color: @black-color;
 }
 
 .foto__link {
