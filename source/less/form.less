@@ -1,7 +1,7 @@
 
 .form__section {
   list-style: none;
-  padding: 25px 20px 25px;
+  padding: 18px 20px 25px;
   border-bottom: 1px solid @grey-color;
   display: flex;
   flex-direction: column;
@@ -9,6 +9,22 @@
   &:nth-child(5),
   &:nth-child(6) {
     border-bottom: none;
+  }
+
+  &--contact {
+    padding-bottom: 27px;
+  }
+
+  &--radiogroup {
+    padding: 20px 20px 25px;
+  }
+
+  &--textarea {
+    padding: 10px 20px 25px;
+  }
+
+  &--button {
+    padding: 22px 20px 22px;
   }
 }
 
@@ -33,29 +49,34 @@
   align-items: baseline;
   justify-content: flex-end;
 
-
   &--contact {
     flex-direction: column;
+    padding-top: 25px;
   }
-}
 
-.form__label--contact {
-  padding-left: 20px;
+  &--contact:last-child {
+    padding-top: 17px;
+  }
 }
 
 .form__label {
   text-transform: uppercase;
-  padding-right: 10px;
+  padding-right: 13px;
   font-size: @usual-size;
-  padding-top: 10px;
+  padding-top: 15px;
   color: @prim;
+}
+
+.form__label--contact {
+  padding-left: 22px;
+  padding-top: 1px;
 }
 
 .form__text {
   background: @greyinput-color;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
-  padding: 16px 20px;
+  padding: 13px 21px;
   flex-grow: 1;
   border: 3px @greyinput-color solid;
   outline: none;
@@ -65,6 +86,7 @@
     font-weight: bold;
     font-size: 16px;
     color: @black-color;
+    letter-spacing: 1px;
   }
 
   &:hover {
@@ -80,6 +102,7 @@
   &--phone,
   &--email {
     max-width: 100%;
+    padding: 10px 20px 15px 20px;
   }
 }
 
@@ -115,11 +138,15 @@
 }
 
 .form__item--radiogroup {
-  padding-top: 30px;
+  padding-top: 23px;
 }
 
 .form__item--checkbox {
-  padding-top: 20px;
+  padding-top: 8px;
+}
+
+.form__title--dash {
+  padding-top: 1px;
 }
 
 .form__textarea {
@@ -127,11 +154,12 @@
   border: none;
   outline: none;
   background: @greyinput-color;
-  padding: 20px;
+  padding: 15px 20px;
   overflow: auto;
-  height: 140px;
+  height: 160px;
   font-weight: bold;
   font-size: @h3-size;
+  letter-spacing: 0;
 
   &::placeholder {
     font-weight: bold;
