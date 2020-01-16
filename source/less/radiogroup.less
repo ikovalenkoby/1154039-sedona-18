@@ -54,7 +54,13 @@
 
 @media (min-width: @tablet-width) {
   .radiogroup__label {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     font-size: 18px;
+  }
+
+  .radiogroup__input {
+    & + span {
+      margin-left: 20px;
+    }
   }
 }

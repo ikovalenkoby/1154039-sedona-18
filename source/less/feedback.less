@@ -21,27 +21,37 @@
 
 @media (min-width: @tablet-width) {
   .feedback__form {
-    padding: 55px 60px 72px 60px;
+    padding: 55px 60px 75px 60px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   .feedback__header {
-    padding: @block-bottom 165px 0;
+    padding: 75px 160px 0;
     border-bottom: none;
+  }
+
+  .feedback__title {
+    letter-spacing: 0.7px;
+    padding-bottom: 30px;
+  }
+
+  .feedback__description {
+    text-align: center;
+    padding: 0;
+    line-height: 25px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .feedback__header {
-    padding: @block-bottom 380px 0;
+    padding: 112px 375px 0;
     border-bottom: none;
   }
 
   .feedback__form {
-    padding: 50px 120px 0 120px;
+    padding: 38px 120px 0 120px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

@@ -176,14 +176,30 @@
     padding-right: 0;
 
     &--name {
-      margin-left: 110px;
-      width: 40%;
+      margin-left: auto;
+      width: 41%;
+      padding-bottom: 0;
     }
 
-    &--checkbox,
+    &--checkbox {
+      width: 100%;
+      padding-top: 3px;
+    }
+
     &--contact {
       width: 100%;
     }
+
+    &--radiogroup {
+      padding: 0 53px 0 0;
+      margin: 20px 0 50px;
+      border-right: 1px solid @grey-color;
+      order: 0;
+    }
+  }
+
+  .form__item--contact:last-child {
+    padding-top: 7px;
   }
 
   .form__text {
@@ -195,11 +211,12 @@
   .form__text,
   .form__text::placeholder {
     font-size: 18px;
+    letter-spacing: 0.1px;
   }
 
   .form__title {
     text-align: left;
-    padding-bottom: 60px;
+    padding-bottom: 57px;
     display: flex;
 
     &--dash {
@@ -234,13 +251,13 @@
     width: 43%;
   }
 
-  .form__section--radiogroup {
-    order: 0;
-  }
-
   .form__item {
-    padding-bottom: 20px;
+    padding-bottom: 22px;
     padding-top: 0;
+
+    &--radiogroup {
+      padding-bottom: 0;
+    }
   }
 
   .form__label {
@@ -252,7 +269,7 @@
   }
 
   .form__item--checkbox {
-    margin: 0 95px;
+    margin: 0 93px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -261,7 +278,7 @@
 
   .form__section--textarea {
     width: 100%;
-    padding-top: 15px;
+    padding-top: 11px;
     padding-bottom: 33px;
   }
 
@@ -275,6 +292,7 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+    padding-top: 0;
   }
 
   .form-item--prim {
@@ -284,19 +302,41 @@
 }
 
 @media (min-width: @desktop-width) {
+  .form__section--radiogroup {
+    padding: 0 128px 0 0;
+  }
+
   .form__title--radiogroup {
     padding-left: 80px;
+    padding-bottom: 59px;
+  }
+
+  .form__item--radiogroup {
+    padding-left: 5px;
   }
 
   .form__section--name {
     width: 41.7%;
-    margin-left: 0;
+    margin-left: 2px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+
+  .form__text {
+    padding-left: 17px;
+  }
+
+  .form__title--dash {
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
     padding-bottom: 30px;
   }
 
   .form__section--contact {
     flex-wrap: wrap;
     flex-direction: row;
+    padding-top: 16px;
 
     & li:last-child {
       margin-left: 8.3%;
