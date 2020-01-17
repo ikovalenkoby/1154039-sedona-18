@@ -1,0 +1,23 @@
+
+.form-item--prim {
+  display: none;
+  text-transform: uppercase;
+  color: @prim;
+}
+
+.form-item--button {
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .form-item--prim {
+    margin-left: auto;
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-item--button {
+    width: 50%;
+  }
+}
