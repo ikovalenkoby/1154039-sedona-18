@@ -1,13 +1,13 @@
 @padding-description: @block-side - 20;
 
 .feedback__header {
-  padding: @block-bottom @main-block-side @block-item-bottom;
+  padding: 38px @main-block-side 15px;
   border-bottom: 1px solid @grey-color;
 }
 
 .feedback__title {
   text-align: center;
-  padding-bottom: 35px;
+  padding-bottom: 25px;
 }
 
 .feedback__description {
@@ -15,16 +15,46 @@
   padding: 0;
 }
 
+.feedback__form {
+  padding-bottom: 50px;
+}
+
 @media (min-width: @tablet-width) {
+  .feedback__form {
+    padding: 55px 60px 75px 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .feedback__header {
-    padding: @block-bottom 165px 0;
+    padding: 75px 160px 0;
     border-bottom: none;
+  }
+
+  .feedback__title {
+    letter-spacing: 0.7px;
+    padding-bottom: 30px;
+  }
+
+  .feedback__description {
+    text-align: center;
+    padding: 0;
+    line-height: 25px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .feedback__header {
-    padding: @block-bottom 360px 0;
+    padding: 112px 375px 0;
     border-bottom: none;
+  }
+
+  .feedback__form {
+    padding: 38px 120px 0 120px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
