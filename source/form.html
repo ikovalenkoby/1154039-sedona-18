@@ -15,13 +15,13 @@
 <header class="page-header">
   <nav class="main-nav">
     <ul class="main-nav__ul menu">
-      <li class="menu__item menu__item--active">
+      <li class="menu__item">
         <a href="index.html">главная</a>
       </li>
       <li class="menu__item">
         <a href="foto.html">фото и видео</a>
       </li>
-      <li class="menu__item">
+      <li class="menu__item menu__item--active">
         <a href="form.html">форма отзыва</a>
       </li>
       <li class="menu__item menu__item--last">
@@ -44,7 +44,7 @@
 <main class="page-main">
   <section class="title-nomain">
     <h1 class="visible-hidden">sedone</h1>
-    <img class="title-nomain__img" src="img/text-sedona.svg" width="50%">
+    <img class="title-nomain__img" src="img/text-sedona.svg" width="460" alt="Сайт Седана">
     <div class="title-nomain__triangle"></div>
   </section>
   <section class="feedback">
@@ -54,20 +54,20 @@
       <p class="feedback__description description">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
         посещенных вами достопримечательностях</p>
     </header>
-    <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post" name="feedback-form">
+    <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post" name="feedback">
       <ul class="form__section form__section--name">
         <li class="form__title title-font">представьтесь:</li>
         <li class="form__item">
           <label class="form__label" for="name">имя*:</label>
-          <input class="form__text" type="text" id="name" required placeholder="Петр"/>
+          <input class="form__text" type="text" id="name" name="userName" required placeholder="Петр"/>
         </li>
         <li class="form__item">
           <label class="form__label" for="surname">фамилия*:</label>
-          <input class="form__text" type="text" id="surname" placeholder="Иванов" required/>
+          <input class="form__text" type="text" id="surname" name="surname" placeholder="Иванов" required/>
         </li>
         <li class="form__item">
           <label class="form__label" for="farther_name">отчество:</label>
-          <input class="form__text" type="text" id="farther_name" placeholder="Александрович"/>
+          <input class="form__text" type="text" id="farther_name" name="fartherName" placeholder="Александрович"/>
         </li>
       </ul>
       <ul class="form__section form__section--contact">
@@ -76,14 +76,14 @@
           <label class="form__label form__label--contact" for="phone-number">
             <span class="form__span form__span--hidden">контактный</span> телефон*:</label>
           <div class="form__wrapper">
-            <input class="form__text form__text--phone" type="tel" id="phone-number" required placeholder="Введите телефон"/>
+            <input class="form__text form__text--phone" type="tel" id="phone-number" name="phoneNumber" required placeholder="Введите телефон"/>
             <span class="form__span form__span--phone"> </span>
           </div>
         </li>
         <li class="form__item form__item--contact">
           <label class="form__label form__label--contact" for="email">электронная почта*:</label>
           <div class="form__wrapper">
-            <input class="form__text form__text--email" type="email" id="email" required placeholder="Введите e-mail"/>
+            <input class="form__text form__text--email" type="email" id="email" name="email" required placeholder="Введите e-mail"/>
             <span class="form__span form__span--email"> </span>
           </div>
         </li>
@@ -136,13 +136,12 @@
         <li class="form__title form__title--dash form__title--textarea"><p class="form__p title-font">опишите свои
           эмоции:</p></li>
         <li class="form__item form__item--textarea">
-          <textarea class="form__textarea" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="form__textarea" rows="4" name="textImpression" placeholder="Опишите подробно все свои восторги"></textarea>
         </li>
       </ul>
       <ul class="form__section form__section--button">
         <li class="form-item form-item--button">
-          <!--<button class="blue-button  blue-button--but h2-font" type="button">отправить отзыв</button>-->
-          <input class="blue-button  blue-button--but h2-font" type="submit" value="отправить отзыв">
+          <input class="blue-button  blue-button--but h2-font" type="submit" name="sendMassage" value="отправить отзыв">
         </li>
         <li class="form-item form-item--prim">
           <p>* - обязательные поля</p>
@@ -229,6 +228,37 @@
       </svg>
     </a>
   </p>
+  <!--<script>
+      var validator = new FormValidator('feedback', [{
+          name: 'userName',
+          display: 'обязательное и содержать только текст',
+          rules: 'required|alpha'
+      }, {
+          name: 'surname',
+          display: 'обязательное и содержать только текст',
+          rules: 'required|alpha'
+      },  {
+          name: 'fartherName',
+          display: 'обязательное и содержать только текст',
+          rules: 'required|alpha'
+      },
+          {
+          name: 'phoneNumber',
+          display: 'Номер телефона обязателен для заполнения',
+          rules: 'required|'
+      }, {
+          name: 'email',
+          rules: 'valid_email',
+          depends: function() {
+              return Math.random() > .5;
+          }
+      }], function(errors, event) {
+          if (errors.length > 0) {
+              // Show the errors
+          }
+      });
+  </script>-->
+  <script type="text/javascript" src="js/validate.js"></script>
 </footer>
 </body>
 </html>

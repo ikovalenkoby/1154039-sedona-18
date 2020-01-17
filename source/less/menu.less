@@ -157,6 +157,24 @@
       background-color: @white-color;
     }
   }
+
+  .menu__item--active {
+    order: 0;
+
+    & a {
+      color: @menu-link-active;
+    }
+
+    &:hover,
+    & a:hover {
+      background-color: @menu-link-active-hover;
+    }
+
+    &:active,
+    & a:active {
+      background-color: @menu-link-active-down;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
