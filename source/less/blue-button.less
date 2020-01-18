@@ -5,9 +5,8 @@
   text-decoration: none;
   display: block;
   margin: 0 @main-block-side @block-item-bottom @main-block-side;
-  text-align: center;
-  padding: 20px 0;
-  width: 96%;
+  padding: 14px 0;
+  border: none;
 
   &:hover {
     background-color: @bglink-color-hover;
@@ -21,5 +20,41 @@
   &:disabled {
     opacity: 0.1;
     color: @link-color-down;
+  }
+
+  &--but {
+    width: 100%;
+    margin: 0;
+    letter-spacing: 0.3px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .blue-button {
+    width: 325px;
+
+    &--search {
+      margin: 5px auto 56px;
+      width: 455px;
+    }
+
+    &--but {
+      margin: 0;
+      letter-spacing: 0.8px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .blue-button {
+    &--but {
+      margin: 0;
+      width: 100%;
+    }
+
+    &--search {
+      margin: 10px auto 63px;
+      width: calc(458 * 100% / 1200);
+    }
   }
 }

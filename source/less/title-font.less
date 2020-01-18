@@ -1,7 +1,21 @@
 
 .title-font {
-  font-size: @h3-size;
   font-weight: bold;
+  font-size: @h3-size;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  color: @black-color;
+  line-height: @h3-line;
+  letter-spacing: 0.3px;
+}
+
+@media (min-width: @tablet-width) {
+  .title-font {
+    font-size: @h3-size-tablet;
+    line-height: @h3-line;
+    letter-spacing: 0;
+
+    &--tablet {
+      font-size: 30px;
+    }
+  }
 }

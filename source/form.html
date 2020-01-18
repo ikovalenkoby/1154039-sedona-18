@@ -3,74 +3,98 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона - Форма</title>
-  <link href="css/style.css" rel="stylesheet">
-  <!--<script src="https://kit.fontawesome.com/6fb84a5a7e.js" crossorigin="anonymous"></script>-->
+  <link href="css/style.min.css" rel="stylesheet">
+  <meta name="viewport" content="device-width,initial-scale=1">
+  <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+  </script>
+  <script src="./js/picturefill.min.js" async=""></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  <script type="text/javascript" src="js/validate.js"></script>
 </head>
 <body>
+<div style="display: none;">
+  <include src="build/img/sprite.svg"></include>
+</div>
 <header class="page-header">
   <nav class="main-nav">
     <ul class="main-nav__ul menu">
-      <li class="menu__item menu__item--active">
+      <li class="menu__item">
         <a href="index.html">главная</a>
       </li>
       <li class="menu__item">
         <a href="foto.html">фото и видео</a>
       </li>
-      <li class="menu__item">
+      <li class="menu__item menu__item--active">
         <a href="form.html">форма отзыва</a>
       </li>
       <li class="menu__item menu__item--last">
         <a href="https://htmlacademy.ru/">html academy</a>
       </li>
+      <li class="menu__item menu__item--logo">
+        <a class="page-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="./img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/logo-sedona-tablet.svg">
+            <img class="page-header__img-logo" width="103" src="./img/logo-sedona-mobile.svg" alt="Sedona">
+          </picture>
+        </a>
+        <button class="menu__button" type="button"><span class="visible-hidden">Открыть окно</span>
+        </button>
+      </li>
     </ul>
   </nav>
-  <a class="page-header__logo" href="index.html">
-    <img class="page-header__img-logo" width="150" src="./img/logo-sedona-mobile.svg" alt="Sedona">
-  </a>
-  <button class="menu__button" type="button"><span class="visible-hidden">Открыть окно</span>
-  </button>
 </header>
 <main class="page-main">
   <section class="title-nomain">
     <h1 class="visible-hidden">sedone</h1>
-    <img class="title-nomain__img" src="img/text-sedona.svg" width="50%">
+    <img class="title-nomain__img" src="img/text-sedona.svg" width="460" alt="Сайт Седана">
+    <div class="title-nomain__triangle"></div>
   </section>
   <section class="feedback">
     <header class="feedback__header">
       <h2 class="visible-hidden">Отзыв о Седоне</h2>
-      <p class="feedback__title title-font">оставьте свой отзыв</p>
+      <p class="feedback__title title-font title-font--tablet">оставьте свой отзыв</p>
       <p class="feedback__description description">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
         посещенных вами достопримечательностях</p>
     </header>
-    <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post" name="feedback-form">
-      <ul class="form__section">
+    <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post" name="feedbackForm">
+      <ul class="form__section form__section--name">
         <li class="form__title title-font">представьтесь:</li>
         <li class="form__item">
           <label class="form__label" for="name">имя*:</label>
-          <input class="form__text" type="text" id="name" required placeholder="Петр"/>
+          <input class="form__text" type="text" id="name" name="userName" required="" placeholder="Петр">
         </li>
         <li class="form__item">
           <label class="form__label" for="surname">фамилия*:</label>
-          <input class="form__text" type="text" id="surname" placeholder="Иванов" required/>
+          <input class="form__text" type="text" id="surname" name="surname" placeholder="Иванов" required="">
         </li>
         <li class="form__item">
           <label class="form__label" for="farther_name">отчество:</label>
-          <input class="form__text" type="text" id="farther_name" placeholder="Александрович"/>
+          <input class="form__text" type="text" id="farther_name" name="fartherName" placeholder="Александрович">
         </li>
       </ul>
-      <ul class="form__section">
-        <li class="form__title title-font">контактная информация:</li>
+      <ul class="form__section form__section--contact">
+        <li class="form__title form__title--dash"><p class="form__p title-font">контактная информация:</p></li>
         <li class="form__item form__item--contact">
-          <label class="form__label" for="phone-number">контактный телефон*:</label>
-          <input class="form__text form__text--phone" type="tel" id="phone-number" required placeholder="Введите телефон"/>
+          <label class="form__label form__label--contact" for="phone-number">
+            <span class="form__span form__span--hidden">контактный</span> телефон*:</label>
+          <div class="form__wrapper">
+            <input class="form__text form__text--phone" type="tel" id="phone-number" name="phoneNumber" required="" placeholder="Введите телефон">
+            <span class="form__span form__span--phone"> </span>
+          </div>
         </li>
         <li class="form__item form__item--contact">
-          <label class="form__label" for="email">электронная почта*:</label>
-          <input class="form__text form__text--email" type="email" id="email" required placeholder="Введите e-mail"/>
+          <label class="form__label form__label--contact" for="email">электронная почта*:</label>
+          <div class="form__wrapper">
+            <input class="form__text form__text--email" type="email" id="email" name="email" required="" placeholder="Введите e-mail">
+            <span class="form__span form__span--email"> </span>
+          </div>
         </li>
       </ul>
-      <ul class="form__section">
-        <li class="form__title title-font">ваше общее впечатление:</li>
+      <ul class="form__section form__section--radiogroup">
+        <li class="form__title title-font form__title--radiogroup">ваше общее впечатление:</li>
         <li class="form__item form__item--radiogroup radiogroup">
           <div class="radiogroup__wrapper">
             <label for="radio1" class="radiogroup__label bold">
@@ -92,8 +116,9 @@
           </div>
         </li>
       </ul>
-      <ul class="form__section">
-        <li class="form__title title-font">Посещенные достопримечательности:</li>
+      <ul class="form__section form__section--checkbox">
+        <li class="form__title form__title--dash"><p class="form__p title-font">Посещенные достопримечательности:</p>
+        </li>
         <li class="form__item form__item--checkbox checkbox">
           <label class="checkbox__label bold" for="check1">
             <input class="checkbox__input" id="check1" type="checkbox" name="attraction" value="Devil's Bridge">
@@ -112,30 +137,36 @@
             <span>Красные скалы</span></label>
         </li>
       </ul>
-      <ul class="form__section">
-        <li class="form__title title-font">опишите свои эмоции:</li>
+      <ul class="form__section form__section--textarea">
+        <li class="form__title form__title--dash form__title--textarea"><p class="form__p title-font">опишите свои
+          эмоции:</p></li>
         <li class="form__item form__item--textarea">
-          <textarea class="form__textarea" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="form__textarea" rows="4" name="textImpression" placeholder="Опишите подробно все свои восторги"></textarea>
         </li>
       </ul>
-      <ul class="form__section">
-        <li class="form-item__button">
-          <button class="blue-button h2-font" type="button">отправить отзыв</button>
+      <ul class="form__section form__section--button">
+        <li class="form-item form-item--button">
+          <input class="blue-button  blue-button--but h2-font" type="submit" name="submit" value="отправить отзыв">
+        </li>
+        <li class="form-item form-item--prim">
+          <p>* - обязательные поля</p>
         </li>
       </ul>
-      <ul class="form-item visible-hidden">
-        <li class="form-item__title title-font">Ваш отзыв отправлен!</li>
-        <li class="form-item__description description">спасибо за ваше участие, ваш отзыв уже поступил к нам. в ближайшее время мы опубликуем его на сайте.
+      <ul class="form__window form__window--success alert">
+        <li class="alert__title title-font">Ваш отзыв отправлен!</li>
+        <li class="alert__description description">спасибо за ваше участие, ваш отзыв уже поступил к нам. в
+          ближайшее время мы опубликуем его на сайте.
         </li>
-        <li class="form-item__button">
+        <li class="alert__button">
           <button class="blue-button" type="button">закрыть окно</button>
         </li>
       </ul>
-      <ul class="form-item visible-hidden">
-        <li class="form-item__title title-font">что-то пошло не так!</li>
-        <li class="form-item__description description">проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      <ul class="form__window form__window--error alert">
+        <li class="alert__title title-font">что-то пошло не так!</li>
+        <li class="alert__description description">проверьте поля, выделенные красным, скорее всего вы забыли их
+          заполнить
         </li>
-        <li class="form-item__button">
+        <li class="alert__button">
           <button class="blue-button" type="button">ок</button>
         </li>
       </ul>
@@ -143,22 +174,115 @@
   </section>
 </main>
 <footer class="page-footer wrapper">
-  <h2 class="page-footer__title">#visitsedona</h2>
+  <h2 class="page-footer__title h2-font">#visitsedona</h2>
+  <div style="display:none">
+    <iclude src="./img/sprite.svg"></iclude>
+  </div>
   <div class="page-footer__social social">
+    <svg style="display: none;">
+      <symbol id="facebook" viewbox="0 0 8.672 18.944">
+        <g fill="currentColor">
+          <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"></path>
+        </g>
+      </symbol>
+      <symbol id="twitter" viewbox="0 0 20 20">
+        <g fill="currentColor">
+          <g id="W6EeEF_1_">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"></path>
+          </g>
+        </g>
+      </symbol>
+      <symbol id="youtube" viewbox="0 0 20 20">
+        <g fill="currentColor">
+          <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"></path>
+        </g>
+      </symbol>
+      <symbol id="htmlacademy" viewbox="0 0 60 60">
+        <g fill="currentColor">
+          <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"></path>
+        </g>
+      </symbol>
+    </svg>
     <ul class="social__list">
       <li class="social__item">
-        <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru"></a></li>
+        <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
+          <svg width="20" height="20">
+            <use xlink:href="#twitter"></use>
+          </svg>
+        </a></li>
       <li class="social__item">
-        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"></a></li>
+        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+          <svg width="20" height="20">
+            <use xlink:href="#facebook"></use>
+          </svg>
+        </a></li>
       <li class="social__item">
-        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
-      </li>
+        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+          <svg width="20" height="20">
+            <use xlink:href="#youtube"></use>
+          </svg>
+        </a></li>
     </ul>
   </div>
   <p class="page-footer__copyright copyright">
     <span class="copyright__text">разработано</span>
-    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <svg width="40" height="40">
+        <use xlink:href="#htmlacademy"></use>
+      </svg>
+    </a>
   </p>
+  <div class="bg"></div>
+  <script>
+      var validator = new FormValidator('feedbackForm', [{
+          name: 'userName',
+          display: 'обязательное и содержать только текст',
+          rules: 'required|alpha'
+      }, {
+          name: 'surname',
+          display: 'обязательное и содержать только текст',
+          rules: 'required|alpha'
+      },  {
+          name: 'fartherName',
+          display: 'обязательное и содержать только текст',
+          rules: 'required|alpha'
+      },
+          {
+          name: 'phoneNumber',
+          display: 'Номер телефона обязателен для заполнения',
+          rules: 'required'
+      }, {
+          name: 'email',
+          rules: 'valid_email',
+          depends: function() {
+              return Math.random() > .5;
+          }
+      }], function(errors, event) {
+          var SELECTOR_ERRORS = $('.form__window--error'),
+              SELECTOR_SUCCESS = $('.form__widow--success');
+
+          if (errors.length > 0) {
+              SELECTOR_ERRORS.empty();
+
+              for (var i = 0, errorLength = errors.length; i < errorLength; i++) {
+                  SELECTOR_ERRORS.append(errors[i].message + '<br />');
+              }
+
+              SELECTOR_SUCCESS.css({ display: 'none' });
+              SELECTOR_ERRORS.fadeIn(200);
+          } else {
+              SELECTOR_ERRORS.css({ display: 'none' });
+              SELECTOR_SUCCESS.fadeIn(200);
+          }
+
+          if (evt && evt.preventDefault) {
+              evt.preventDefault();
+          } else if (event) {
+              event.returnValue = false;
+          }
+      });
+
+  </script>
 </footer>
 </body>
 </html>

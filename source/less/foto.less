@@ -1,6 +1,6 @@
 
 .foto__list {
-  padding: @block-item-bottom 0;
+  padding: @main-block-side 0 19px 0;
   list-style: none;
 }
 
@@ -9,23 +9,117 @@
   text-align: left;
   padding: 0 @main-block-side;
   border-bottom: 1px solid @grey-color;
+  margin-bottom: @main-block-side;
 }
 
 .foto__title {
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 1px;
-  padding-top: @block-item-bottom;
+  padding-top: 11px;
+  display: block;
+}
+
+.foto__title,
+.foto__description {
+  line-height: 25px;
 }
 
 .foto__like {
   line-height: @h3-line;
-  padding-bottom: @block-item-bottom;
+  padding-bottom: 17px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+  color: @like-icon;
+}
 
-  &::before {
-    padding-right: 50px;
-    content: "";
-    background: url("../img/icon-like.svg") no-repeat;
-    background-size: 40px 40px;
+.foto__sum {
+  padding-left: 13px;
+  color: @black-color;
+}
+
+.foto__link {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .foto__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 60px;
+    padding-bottom: 75px;
+    padding-top: 30px;
+  }
+
+  .foto__item {
+    width: 50%;
+    border-bottom: none;
+    background: @bgdesktop;
+    padding: 0;
+    margin-bottom: 0;
+
+    &:first-child {
+      width: 100%;
+    }
+
+    &:first-child .foto__wrapper {
+      padding-right: 20px;
+    }
+  }
+
+  .foto__wrapper {
+    padding: 10px 30px 15px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .foto__like {
+    margin-left: auto;
+    align-self: center;
+    padding: 1px 9px 0 0;
+
+    &--large {
+      padding: 0;
+    }
+  }
+
+  .foto__svg {
+    margin: 3px 0 0 3px;
+  }
+
+  .foto__title {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .foto__list {
+    margin: 0;
+  }
+
+  .foto__item {
+    width: 33%;
+    flex-grow: 1;
+    position: relative;
+
+    &:first-child {
+      width: 100%;
+    }
+  }
+
+  .foto__wrapper {
+    position: absolute;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    color: white;
+    width: 100%;
+    padding: 16px 20px;
+  }
+
+  .foto__img {
+    display: block;
   }
 }

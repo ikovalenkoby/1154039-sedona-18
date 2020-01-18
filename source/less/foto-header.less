@@ -1,15 +1,51 @@
 
 .foto-header {
-  padding: @block-bottom @main-block-side @block-item-bottom;
+  padding: 37px @main-block-side 30px;
   border-bottom: 1px solid @grey-color;
 }
 
 .foto-header__title {
-  margin: 0 @main-block-side @block-item-bottom @main-block-side;
+  margin: 0 @main-block-side 25px @main-block-side;
   text-align: center;
 }
 
 .foto-header__description {
   text-align: center;
-  line-height: @h3-line;
+  line-height: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .foto-header {
+    border-bottom: none;
+    padding: @block-bottom 140px @block-item-bottom;
+  }
+
+  .foto-header__title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .foto-header__description {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .foto-header {
+    padding: @block-bottom 380px @block-item-bottom;
+  }
+
+  .foto__like,
+  .foto__sum {
+    color: @white-color;
+  }
+
+  .foto-header__title {
+    margin-top: 66px;
+    margin-bottom: 32px;
+  }
+
+  .foto-header__description {
+    padding: 0;
+  }
 }
