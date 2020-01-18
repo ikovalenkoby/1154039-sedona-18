@@ -40,6 +40,20 @@
   color: @video-icon;
   padding-top: 5px;
 
+  &:focus {
+    border: none;
+  }
+
+  &:hover {
+    color: @prim;
+    border: none;
+  }
+
+  &:active {
+    color: @video-icon-active-mobile;
+    border: none;
+  }
+
   &--cc {
     margin-right: 25px;
   }
@@ -135,6 +149,20 @@
     &--fullsize {
       margin-right: 35px;
       padding-top: 4px;
+    }
+
+    &:focus {
+      border: none;
+    }
+
+    &:hover {
+      color: @video-icon-hover-tablet;
+      border: none;
+    }
+
+    &:active {
+      color: @video-icon-active-tablet;
+      border: none;
     }
   }
 
