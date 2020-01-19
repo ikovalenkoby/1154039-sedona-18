@@ -159,16 +159,19 @@
 }
 
 .form__window {
-  position: absolute;
-  bottom: 30%;
+  position: fixed;
+  top: 30%;
+  left: 0;
   width: 100%;
   background-color: @white-color;
 
   &--error {
+    top: 30%;
     display: none;
   }
 
   &--success {
+    top: 30%;
     display: none;
   }
 }
@@ -298,6 +301,28 @@
     align-items: center;
     width: 100%;
     padding-top: 0;
+  }
+
+  .form__window {
+    position: fixed;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    background-color: @white-color;
+
+    &--error {
+      top: 30%;
+      display: none;
+      width: 52%;
+      left: 24%;
+    }
+
+    &--success {
+      top: 30%;
+      display: none;
+      width: 86.6%;
+      left: 6.5%;
+    }
   }
 }
 
