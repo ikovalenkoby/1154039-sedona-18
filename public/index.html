@@ -10,12 +10,11 @@
       document.createElement("picture");
   </script>
   <script src="./js/picturefill.min.js" async=""></script>
-  <link rel="preload" href="./fonts/ptsans.woff" as="font">
-  <link rel="preload" href="./fonts/ptsans.woff2" as="font">
-  <link rel="preload" href="./fonts/ptsansbold.woff" as="font">
-  <link rel="preload" href="./fonts/ptsansbold.woff2" as="font">
 </head>
 <body>
+<div style="display: none;">
+  <include src="build/img/sprite.svg"></include>
+</div>
 <header class="page-header">
   <nav class="main-nav">
     <ul class="main-nav__ul menu">
@@ -55,7 +54,7 @@
     <header class="reason__header">
       <h2 class="visible-hidden">Причины посетить седону</h2>
       <h3 class="reason__title title-font">седона &mdash; небольшой городок в аризоне, заслуживающий большего!</h3>
-      <p class="reason__description reason__description--title  description">рассмотрим 5 причин, по которым седона
+      <p class="reason__description reason__description--title description">рассмотрим 5 причин, по которым седона
         круче, чем гранд каньон!</p>
     </header>
     <ul class="reason-list">
@@ -72,12 +71,12 @@
         </div>
         <div class="reason__wrapper">
           <picture>
-            <source type="image/webp" media="(min-width: 1280px)" srcset="./img/main-city-desktop@1x.webp 1x, ./img/main-city-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="./img/main-city-tablet@1x.webp 1x, ./img/main-city-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="./img/main-city-mobile@1x.webp 1x, ./img/main-city-mobile@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1280px)" srcset="./img/main-city-desktop@1x.webp, ./img/main-city-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/main-city-tablet@1x.webp, ./img/main-city-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/main-city-mobile@1x.webp, ./img/main-city-mobile@2x.webp 2x">
 
-            <source media="(min-width: 1280px)" srcset="./img/main-city-desktop@1x.jpg 1x, ./img/main-city-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="./img/main-city-tablet@1x.jpg 1x, ./img/main-city-tablet@2x.jpg 2x">
+            <source media="(min-width: 1280px)" srcset="./img/main-city-desktop@1x.jpg, ./img/main-city-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/main-city-tablet@1x.jpg, ./img/main-city-tablet@2x.jpg 2x">
             <img class="reason__img" src="./img/main-city-mobile@1x.jpg" srcset="./img/main-city-mobile@2x.jpg 2x" alt="седона - американский город">
           </picture>
 
@@ -112,27 +111,27 @@
         <div class="reason-list__desciption reason-list__desciption--blue">
           <h3 class="reason-list__title reason-list__title--white reason-list__title--padding"><span class="wrap--tb wrap--dt">там есть</span> мост дьявола</h3>
           <p class="reason__description reason__description--white dash">№2</p>
-          <p class="reason__description reason__description--full reason__description--white description"><span class="wrap--tb ">да, по нему можно</span> <span class="wrap--tb">пройти! если вы</span>
+          <p class="reason__description reason__description--full reason__description--white description"><span class="wrap--tb">да, по нему можно</span> <span class="wrap--tb">пройти! если вы</span>
             осмелитесь, конечно</p>
         </div>
         <div class="reason__wrapper">
           <picture>
-            <source type="image/webp" media="(min-width: 1280px)" srcset="./img/main-bridge-desktop@1x.webp 1x, ./img/main-bridge-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="./img/main-bridge-tablet@1x.webp 1x, ./img/main-bridge-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1280px)" srcset="./img/main-bridge-desktop@1x.webp, ./img/main-bridge-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/main-bridge-tablet@1x.webp, ./img/main-bridge-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp 1x,./img/main-bridge-mobile@2x.webp 2x">
 
-            <source media="(min-width: 1280px)" srcset="./img/main-bridge-desktop@1x.jpg 1x, ./img/main-bridge-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="./img/main-bridge-tablet@1x.jpg 1x, ./img/main-bridge-tablet@2x.jpg 2x">
+            <source media="(min-width: 1280px)" srcset="./img/main-bridge-desktop@1x.jpg, ./img/main-bridge-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/main-bridge-tablet@1x.jpg, ./img/main-bridge-tablet@2x.jpg 2x">
             <img class="reason__img" src="img/main-bridge-mobile@1x.jpg" srcset="./img/main-bridge-mobile@2x.jpg 2x" alt="мост дьявола">
           </picture>
         </div>
       </li>
       <li>
         <ul class="reason-list__wrapper reason-list__wrapper--grey">
-          <li class="reason-list__item  reason-list__item--grey">
+          <li class="reason-list__item reason-list__item--grey">
             <div class="reason-list__desciption">
               <h3 class="reason-list__title reason-list__title--grey">небольшая площадь</h3>
-              <p class="reason__description  dash description">№3</p>
+              <p class="reason__description dash description">№3</p>
               <p class="reason__description reason__description--smpad description border">все интересные места
                 находятся очень близко</p>
             </div>
