@@ -1,44 +1,44 @@
 @import url("_variables.less");
-@import url("fonts.less");
-@import url("h2-font.less");
-@import url("title-font.less");
-@import url("description.less");
-@import url("bold.less");
-@import url("dash.less");
-@import url("visible-hidden.less");
-@import url("menu.less");
-@import url("page-header.less");
-@import url("page-main.less");
-@import url("page-nomain.less");
-@import url("title.less");
-@import url("reason.less");
-@import url("reason-list.less");
-@import url("clarification.less");
-@import url("search.less");
-@import url("blue-button.less");
-@import url("foto.less");
-@import url("foto-header.less");
-@import url("video.less");
-@import url("feedback.less");
-@import url("form.less");
-@import url("form-item.less");
-@import url("alert.less");
-@import url("radiogroup.less");
-@import url("checkbox.less");
-@import url("title-nomain.less");
-@import url("social.less");
-@import url("page-footer.less");
-@import url("copyright.less");
-@import url("border.less");
-@import url("wrapper.less");
-@import url("wrap.less");
+@import url("fonts/fonts.less");
+@import url("fonts/h2-font.less");
+@import url("title/title-font.less");
+@import url("blocks/description.less");
+@import url("fonts/bold.less");
+@import url("decoration/dash.less");
+@import url("blocks/visible-hidden.less");
+@import url("header/menu.less");
+@import url("header/page-header.less");
+@import url("blocks/page-main.less");
+@import url("blocks/page-nomain.less");
+@import url("title/title.less");
+@import url("blocks/reason.less");
+@import url("blocks/reason-list.less");
+@import url("blocks/clarification.less");
+@import url("blocks/search.less");
+@import url("form/blue-button.less");
+@import url("medias/foto.less");
+@import url("medias/foto-header.less");
+@import url("medias/video.less");
+@import url("form/feedback.less");
+@import url("form/form.less");
+@import url("form/form-item.less");
+@import url("form/alert.less");
+@import url("form/radiogroup.less");
+@import url("form/checkbox.less");
+@import url("title/title-nomain.less");
+@import url("footer/social.less");
+@import url("footer/page-footer.less");
+@import url("footer/copyright.less");
+@import url("decoration/border.less");
+@import url("blocks/wrapper.less");
+@import url("blocks/wrap.less");
 
 html {
   background: @bgdesktop;
 }
 
 body {
-  font-family: "PT-Sans", sans-serif;
+  font-family: "PT-Sans", "Arial", sans-serif;
   font-size: @usual-size;
   min-width: @mobile-width;
   width: @mobile-width;
@@ -53,8 +53,20 @@ img {
 * {
   margin: 0;
   padding: 0;
-  font-family: "PT-Sans", sans-serif;
+  font-family: "PT-Sans", "Arial", sans-serif;
   box-sizing: border-box;
+}
+
+/*стилт для сравнения прорисованного макета и созданного документа*/
+.bg {
+  background-image: url("../img/sedona-index-mobile.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 3610px;
 }
 
 @media (min-width: @tablet-width) {

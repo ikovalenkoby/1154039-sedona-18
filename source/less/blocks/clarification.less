@@ -1,6 +1,6 @@
 
 .clarification {
-  padding: 25px @main-block-side 20px @main-block-side;
+  padding: 27px @main-block-side 20px @main-block-side;
   list-style: none;
   background: @white-color;
   display: flex;
@@ -13,36 +13,35 @@
 
   &--house::before {
     content: "";
-    background: url("../img/icon-house.svg") no-repeat; /* Параметры фона */
+    background: url("../../img/icon-house.svg") no-repeat; /* Параметры фона */
     width: @icon-size;
     height: @icon-size;
-    background-size: @icon-size @icon-size;
+    background-size: 38px 36px;
     padding-right: @icon-padding-right;
   }
 
   &--gifts {
-    margin-bottom: 6px;
+    margin-bottom: 4px;
   }
 
   &--gifts::before {
     content: "";
-    background: url("../img/icon-gift.svg") no-repeat; /* Параметры фона */
+    background: url("../../img/icon-gift.svg") no-repeat; /* Параметры фона */
     width: @icon-size;
     height: @icon-size;
-    background-size: @icon-size @icon-size;
+    background-size: 35px 38px;
     padding-right: 26px;
   }
 
   &--food::before {
     content: "";
-    background: url("../img/icon-burger.svg") no-repeat; /* Параметры фона */
+    background: url("../../img/icon-burger.svg") no-repeat; /* Параметры фона */
     width: @icon-size;
     height: @icon-size;
-    background-size: @icon-size @icon-size;
+    background-size: 38px 36px;
     padding-right: @icon-padding-right;
   }
 }
-
 
 .clarification__icon {
   height: @icon-size;
@@ -55,12 +54,12 @@
 }
 
 .clarification__wrapper {
-  padding: 11px 0;
+  padding: 10px 0 18px;
 }
 
 .clarification__description {
   padding-top: 15px;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -82,7 +81,7 @@
 
     &--house::before {
       content: "";
-      background: url("../img/icon-house.svg") no-repeat; /* Параметры фона */
+      background: url("../../img/icon-house.svg") no-repeat; /* Параметры фона */
       width: @icon-size-tablet;
       height: @icon-size-tablet;
       background-size: @icon-size-tablet @icon-size-tablet;
@@ -92,7 +91,7 @@
 
     &--gifts::before {
       content: "";
-      background: url("../img/icon-gift.svg") no-repeat; /* Параметры фона */
+      background: url("../../img/icon-gift.svg") no-repeat; /* Параметры фона */
       width: @icon-size-tablet;
       height: @icon-size-tablet;
       background-size: @icon-size-tablet @icon-size-tablet;
@@ -102,7 +101,7 @@
 
     &--food::before {
       content: "";
-      background: url("../img/icon-burger.svg") no-repeat; /* Параметры фона */
+      background: url("../../img/icon-burger.svg") no-repeat; /* Параметры фона */
       width: @icon-size-tablet;
       height: @icon-size-tablet;
       background-size: @icon-size-tablet @icon-size-tablet;
