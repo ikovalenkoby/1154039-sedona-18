@@ -12,44 +12,91 @@
   }
 }
 
-.checkbox__input {
+.checkbox__wrapper {
   position: relative;
-  appearance: none;
-  font-size: @h2-size;
+  margin-right: 25px;
+  /* appearance: none;
+   width: 55px;
+   height: 55px;
+   margin: 0;
+   outline: none;
+   background: @greyinput-color;
+   border-radius: 5px;*/
+}
+
+.checkbox__input {
   width: 55px;
   height: 55px;
   margin: 0;
   outline: none;
+  appearance: none;
   transition: 300ms ease-out;
+  background: @greyinput-color;
+  color: @greyinput-color;
+  border-radius: 5px;
 
-  &::after {
-    content: "";
-    background: @greyinput-color;
-    display: inline-block;
-    text-align: center;
-    width: 56px;
-    height: 56px;
-    border-radius: 5px;
+  & + svg {
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    color: @greyinput-color;
   }
 
-  &:hover::after {
-    background: @greyinput-hover-color;
+  &:checked + svg {
+    color: @radio-button-color;
   }
 
-  &:checked::after {
-    font-weight: 900;
-    content: "";
-    color: @black-color;
-    background: @greyinput-down-color url("../../img/icon-tick.svg") no-repeat;
-    background-size: 24px;
-    background-position: center;
-    font-size: 1em;
-  }
+  /*
+    &::after {
+      content: "";
+      background: @greyinput-color;
+      display: inline-block;
+      text-align: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 5px;
+    }
 
-  + span {
-    margin-left: 25px;
-  }
+    &:checked::after {
+      font-weight: 900;
+      content: "";
+      color: @radio-button-color;
+      background-size: 24px;
+      background: @greyinput-color url("../../img/icon-tick.svg") no-repeat center;
+      font-size: 1em;
+    }
+
+    &:hover::after {
+      background: @greyinput-hover-color;
+    }
+
+    &:hover:checked::after {
+      font-weight: 900;
+      content: "";
+      color: @radio-button-color;
+      background: @greyinput-hover-color url("../../img/icon-tick.svg") no-repeat;
+      background-size: 24px;
+      background-position: center;
+      font-size: 1em;
+    }
+
+    &:disabled::after {
+      background: @greyinput-down-color;
+      color: @radio-button-disabled-color;
+    }
+
+    &:disabled:checked::after {
+      font-weight: 900;
+      content: "";
+      color: @radio-button-disabled-color;
+      background: @greyinput-down-color url("../../img/icon-tick.svg") no-repeat;
+      background-size: 24px;
+      background-position: center;
+      font-size: 1em;
+    }
+  */
 }
+
 
 @media (min-width: @tablet-width) {
   .checkbox__label {

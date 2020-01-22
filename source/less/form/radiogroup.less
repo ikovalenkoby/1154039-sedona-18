@@ -18,23 +18,28 @@
   background: @greyinput-color;
   transition: 300ms ease-out;
 
-  &::after {
-    content: "";
-    background: @greyinput-color;
-    display: inline-block;
-    text-align: center;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-  }
-
-  &:hover::after {
-    background: @greyinput-hover-color;
-  }
-
   &:checked::after {
     content: "";
     background: @radio-button-color;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    top: 31%;
+    left: 31%;
+    position: absolute;
+  }
+
+  &:hover {
+    background: @greyinput-hover-color;
+  }
+
+  &:disabled {
+    background-color: @greyinput-down-color;
+  }
+
+  &:disabled:checked::after {
+    content: "";
+    background: @radio-button-disabled-color;
     width: 21px;
     height: 21px;
     border-radius: 50%;
