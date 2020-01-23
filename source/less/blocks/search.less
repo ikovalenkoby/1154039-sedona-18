@@ -9,7 +9,17 @@
 }
 
 .search__map {
-  padding-bottom: 33px;
+  margin-bottom: 33px;
+  background: @light-blue-color url("../../img/bg-map-mobile@1x.jpg") no-repeat;
+  background-size: 100% 100%;
+  background-position: bottom;
+
+  @media (min-resolution: @retina-ddpx) {
+    background: @light-blue-color url("../../img/bg-map-mobile@2x.jpg") no-repeat;
+    background-size: 100% 100%;
+    background-position: bottom;
+    width: 100%;
+  }
 }
 
 .search__iframe {
@@ -25,7 +35,17 @@
   }
 
   .search__map {
-    padding-bottom: 28px;
+    margin-bottom: 28px;
+    background: @light-blue-color url("../../img/bg-map-tablet@1x.jpg") no-repeat;
+    background-size: 100% 100%;
+    background-position: bottom;
+
+    @media (min-resolution: @retina-ddpx) {
+      background: @light-blue-color url("../../img/bg-map-tablet@2x.jpg") no-repeat;
+      background-size: 100% 100%;
+      background-position: bottom;
+      width: 100%;
+    }
   }
 
   .search__title {
@@ -38,5 +58,19 @@
   .search__description {
     padding-right: 350px;
     padding-left: 350px;
+  }
+
+  .search__map {
+    margin-bottom: 28px;
+    background: @light-blue-color url("../../img/bg-map-desktop@1x.jpg") no-repeat;
+    background-size: 100% 100%;
+    background-position: bottom;
+
+    @media (min-resolution: @retina-ddpx) {
+      background: @light-blue-color url("../../img/bg-map-desktop@2x.jpg") no-repeat;
+      background-size: 100% 100%;
+      background-position: bottom;
+      width: 100%;
+    }
   }
 }

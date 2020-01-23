@@ -15,13 +15,6 @@
 .checkbox__wrapper {
   position: relative;
   margin-right: 25px;
-  /* appearance: none;
-   width: 55px;
-   height: 55px;
-   margin: 0;
-   outline: none;
-   background: @greyinput-color;
-   border-radius: 5px;*/
 }
 
 .checkbox__input {
@@ -37,8 +30,8 @@
 
   & + svg {
     position: absolute;
-    left: 15%;
-    top: 20%;
+    left: 28%;
+    top: 33%;
     color: @greyinput-color;
   }
 
@@ -46,55 +39,34 @@
     color: @radio-button-color;
   }
 
-  /*
-    &::after {
-      content: "";
-      background: @greyinput-color;
-      display: inline-block;
-      text-align: center;
-      width: 56px;
-      height: 56px;
-      border-radius: 5px;
-    }
+  &:hover:not(:checked) {
+    background: @greyinput-hover-color;
+  }
 
-    &:checked::after {
-      font-weight: 900;
-      content: "";
-      color: @radio-button-color;
-      background-size: 24px;
-      background: @greyinput-color url("../../img/icon-tick.svg") no-repeat center;
-      font-size: 1em;
-    }
+  &:hover + svg {
+    color: @greyinput-hover-color;
+  }
 
-    &:hover::after {
-      background: @greyinput-hover-color;
-    }
+  &:hover:checked + svg {
+    color: @radio-button-color;
+  }
 
-    &:hover:checked::after {
-      font-weight: 900;
-      content: "";
-      color: @radio-button-color;
-      background: @greyinput-hover-color url("../../img/icon-tick.svg") no-repeat;
-      background-size: 24px;
-      background-position: center;
-      font-size: 1em;
-    }
+  &:disabled {
+    background: @greyinput-down-color;
+    color: @greyinput-down-color;
+  }
 
-    &:disabled::after {
-      background: @greyinput-down-color;
-      color: @radio-button-disabled-color;
-    }
+  &:disabled + svg {
+    color: @greyinput-down-color;
+  }
 
-    &:disabled:checked::after {
-      font-weight: 900;
-      content: "";
-      color: @radio-button-disabled-color;
-      background: @greyinput-down-color url("../../img/icon-tick.svg") no-repeat;
-      background-size: 24px;
-      background-position: center;
-      font-size: 1em;
-    }
-  */
+  &:disabled:checked + svg {
+    color: @radio-button-disabled-color;
+  }
+
+  &:focus {
+    border: 1px solid #b15d1b;
+  }
 }
 
 
@@ -120,6 +92,6 @@
 @media (min-width: @desktop-width) {
   .checkbox__label {
     width: auto;
-    padding-bottom: 22px;
+    padding-bottom: 0;
   }
 }

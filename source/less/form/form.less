@@ -47,6 +47,11 @@
   &--contact:last-child {
     padding-top: 17px;
   }
+
+  &--checkbox {
+    padding-bottom: 22px;
+    padding-top: 8px;
+  }
 }
 
 .form__label {
@@ -87,6 +92,15 @@
   &:focus {
     background: @white-color;
     border: 3px @greyinput-color solid;
+  }
+
+  &:disabled {
+    background: @greyinput-down-color;
+    border: 3px @greyinput-down-color solid;
+  }
+
+  &:disabled::placeholder {
+    color: @radio-button-disabled-color;
   }
 
   &--phone,
@@ -131,10 +145,6 @@
   padding-top: 23px;
 }
 
-.form__item--checkbox {
-  padding-top: 8px;
-}
-
 .form__title--dash {
   padding-top: 1px;
 }
@@ -155,6 +165,24 @@
     font-weight: bold;
     font-size: @h3-size;
     color: @black-color;
+  }
+
+  &:hover {
+    background: @greyinput-hover-color;
+  }
+
+  &:focus {
+    background: @white-color;
+    border: 3px @greyinput-color solid;
+    padding: 12px 17px;
+  }
+
+  &:disabled {
+    background: @greyinput-down-color;
+  }
+
+  &:disabled::placeholder {
+    color: @radio-button-disabled-color;
   }
 }
 
@@ -352,7 +380,7 @@
 
     &--checkbox {
       padding-top: 10px;
-      padding-bottom: 0;
+      padding-bottom: 22px;
     }
 
     &--textarea {

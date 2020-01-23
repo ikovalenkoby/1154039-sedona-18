@@ -33,7 +33,7 @@
       <li class="menu__item menu__item--logo">
         <a class="page-header__logo" href="index.html">
           <picture>
-            <source media="(min-width: 1280px)" srcset="./img/logo-sedona-desktop.svg">
+            <source media="(min-width: 1200px)" srcset="./img/logo-sedona-desktop.svg">
             <source media="(min-width: 768px)" srcset="./img/logo-sedona-tablet.svg">
             <img class="page-header__img-logo" width="103" src="./img/logo-sedona-mobile.svg" alt="Sedona">
           </picture>
@@ -79,16 +79,14 @@
           <label class="form__label form__label--contact" for="phone-number">
             <span class="form__span form__span--hidden">контактный</span> телефон*:</label>
           <div class="form__wrapper">
-            <input class="form__text form__text--phone" type="tel" id="phone-number" name="phoneNumber" required=""
-                   placeholder="Введите телефон">
+            <input class="form__text form__text--phone" type="tel" id="phone-number" name="phoneNumber" required="" placeholder="Введите телефон">
             <span class="form__span form__span--phone"> </span>
           </div>
         </li>
         <li class="form__item form__item--contact">
           <label class="form__label form__label--contact" for="email">электронная почта*:</label>
           <div class="form__wrapper">
-            <input class="form__text form__text--email" type="email" id="email" name="email" required=""
-                   placeholder="Введите e-mail">
+            <input class="form__text form__text--email" type="email" id="email" name="email" required="" placeholder="Введите e-mail">
             <span class="form__span form__span--email"> </span>
           </div>
         </li>
@@ -123,7 +121,7 @@
           <label class="checkbox__label bold" for="check1">
             <div class="checkbox__wrapper">
               <input class="checkbox__input" id="check1" type="checkbox" name="attraction" value="Devil's Bridge">
-              <svg width="54" height="54" fill="currentColor">
+              <svg width="42" height="42" fill="currentColor">
                 <use xlink:href="#icon-tick"></use>
               </svg>
             </div>
@@ -132,7 +130,7 @@
           <label class="checkbox__label bold" for="check2">
             <div class="checkbox__wrapper">
               <input class="checkbox__input" id="check2" type="checkbox" name="attraction" value="Bell-Mountain">
-              <svg width="54" height="54">
+              <svg width="42" height="42">
                 <use xlink:href="#icon-tick"></use>
               </svg>
             </div>
@@ -141,7 +139,7 @@
           <label class="checkbox__label bold" for="check3">
             <div class="checkbox__wrapper">
               <input class="checkbox__input" id="check3" type="checkbox" name="attraction" value="Slide Park">
-              <svg width="54" height="54">
+              <svg width="42" height="42">
                 <use xlink:href="#icon-tick"></use>
               </svg>
             </div>
@@ -150,7 +148,7 @@
           <label class="checkbox__label bold" for="check4">
             <div class="checkbox__wrapper">
               <input class="checkbox__input" id="check4" type="checkbox" name="attraction" value="Red-rock">
-              <svg width="54" height="54">
+              <svg width="42" height="42">
                 <use xlink:href="#icon-tick"></use>
               </svg>
             </div>
@@ -161,8 +159,7 @@
         <li class="form__title form__title--dash form__title--textarea"><p class="form__p title-font">опишите свои
           эмоции:</p></li>
         <li class="form__item form__item--textarea">
-          <textarea class="form__textarea" rows="4" name="textImpression"
-                    placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="form__textarea" rows="4" name="textImpression" placeholder="Опишите подробно все свои восторги"></textarea>
         </li>
       </ul>
       <ul class="form__section form__section--button">
@@ -236,19 +233,22 @@
     <ul class="social__list">
       <li class="social__item">
         <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
-          <svg width="20" height="20">
+          <svg width="20" height="20" role="img" aria-labelledby="twitter">
+            <title id="twitter">Read about Sedona in twitter</title>
             <use xlink:href="#twitter"></use>
           </svg>
         </a></li>
       <li class="social__item">
         <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-          <svg width="20" height="20">
+          <svg width="20" height="20"  role="img" aria-labelledby="facebook">
+            <title id="facebook">Read about Sedona in facebook</title>
             <use xlink:href="#facebook"></use>
           </svg>
         </a></li>
       <li class="social__item">
         <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-          <svg width="20" height="20">
+          <svg width="20" height="20"  role="img" aria-labelledby="youtube">
+            <title id="youtube">Read about Sedona in youtube</title>
             <use xlink:href="#youtube"></use>
           </svg>
         </a></li>
@@ -257,12 +257,12 @@
   <p class="page-footer__copyright copyright">
     <span class="copyright__text">разработано</span>
     <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-      <svg width="40" height="40">
+      <svg width="40" height="40" role="img" aria-labelledby="htmlacademy">
+        <title id="htmlacademy">Go to htmlacademy website.</title>
         <use xlink:href="#htmlacademy"></use>
       </svg>
     </a>
   </p>
-  <!--<div class="bg"></div>-->
   <script src="./js/picturefill.min.js" async=""></script>
 </footer>
 </body>

@@ -34,7 +34,7 @@
       <li class="menu__item menu__item--logo">
         <a class="page-header__logo">
           <picture>
-            <source media="(min-width: 1280px)" srcset="./img/logo-sedona-desktop.svg">
+            <source media="(min-width: 1200px)" srcset="./img/logo-sedona-desktop.svg">
             <source media="(min-width: 768px)" srcset="./img/logo-sedona-tablet.svg">
             <img class="page-header__img-logo" width="103" src="./img/logo-sedona-mobile.svg" alt="Sedona">
           </picture>
@@ -71,11 +71,11 @@
         </div>
         <div class="reason__wrapper">
           <picture>
-            <source type="image/webp" media="(min-width: 1280px)" srcset="./img/main-city-desktop@1x.webp 1x, ./img/main-city-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="./img/main-city-desktop@1x.webp 1x, ./img/main-city-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="./img/main-city-tablet@1x.webp 1x, ./img/main-city-tablet@2x.webp 2x">
             <source type="image/webp" srcset="./img/main-city-mobile@1x.webp 1x, ./img/main-city-mobile@2x.webp 2x">
 
-            <source media="(min-width: 1280px)" srcset="./img/main-city-desktop@1x.jpg 1x, ./img/main-city-desktop@2x.jpg 2x">
+            <source media="(min-width: 1200px)" srcset="./img/main-city-desktop@1x.jpg 1x, ./img/main-city-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="./img/main-city-tablet@1x.jpg 1x, ./img/main-city-tablet@2x.jpg 2x">
             <img class="reason__img" src="./img/main-city-mobile@1x.jpg" srcset="./img/main-city-mobile@2x.jpg 2x" alt="седона - американский город">
           </picture>
@@ -117,11 +117,11 @@
         </div>
         <div class="reason__wrapper">
           <picture>
-            <source type="image/webp" media="(min-width: 1280px)" srcset="./img/main-bridge-desktop@1x.webp 1x, ./img/main-bridge-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="./img/main-bridge-desktop@1x.webp 1x, ./img/main-bridge-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="./img/main-bridge-tablet@1x.webp 1x, ./img/main-bridge-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp 1x,./img/main-bridge-mobile@2x.webp 2x">
 
-            <source media="(min-width: 1280px)" srcset="./img/main-bridge-desktop@1x.jpg 1x, ./img/main-bridge-desktop@2x.jpg 2x">
+            <source media="(min-width: 1200px)" srcset="./img/main-bridge-desktop@1x.jpg 1x, ./img/main-bridge-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="./img/main-bridge-tablet@1x.jpg 1x, ./img/main-bridge-tablet@2x.jpg 2x">
             <img class="reason__img" src="img/main-bridge-mobile@1x.jpg" srcset="./img/main-bridge-mobile@2x.jpg 2x" alt="мост дьявола">
           </picture>
@@ -162,9 +162,11 @@
     <p class="search__description description"><span class="wrap">укажите предполагаемые даты поездки,</span> и мы
       покажем вам лучшие предложения
       гостиниц в седоне</p>
-    <a class="blue-button blue-button--search h2-font" href="#">найти гостиницу</a>
+    <a class="blue-button blue-button--search h2-font" href="search.html">найти гостиницу</a>
     <div class="search__map">
-      <iframe class="search__iframe" height="355" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d838265.8828291094!2d-111.7889969!3d34.8442625!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1573896040272!5m2!1sru!2sby" allowfullscreen=""></iframe>
+      <iframe class="search__iframe" height="355" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d838265.8828291094!2d-111.7889969!3d34.8442625!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1573896040272!5m2!1sru!2sby" allowfullscreen="">
+        <img src="./img/bg-map-mobile@1x.jpg">
+      </iframe>
     </div>
   </section>
 </main>
@@ -198,19 +200,22 @@
     <ul class="social__list">
       <li class="social__item">
         <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
-          <svg width="20" height="20">
+          <svg width="20" height="20" role="img" role="img" aria-labelledby="twitter">
+            <title id="twitter">Read about Sedona in twitter</title>
             <use xlink:href="#twitter"></use>
           </svg>
         </a></li>
       <li class="social__item">
         <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-          <svg width="20" height="20">
+          <svg width="20" height="20" role="img" aria-labelledby="facebook">
+            <title id="facebook">Read about Sedona in facebook</title>
             <use xlink:href="#facebook"></use>
           </svg>
         </a></li>
       <li class="social__item">
         <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-          <svg width="20" height="20">
+          <svg width="20" height="20" role="img" aria-labelledby="youtube">
+            <title id="youtube">Read about Sedona in youtube</title>
             <use xlink:href="#youtube"></use>
           </svg>
         </a></li>
@@ -219,12 +224,12 @@
   <p class="page-footer__copyright copyright">
     <span class="copyright__text">разработано</span>
     <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-      <svg width="40" height="40">
+      <svg width="40" height="40" role="img" aria-labelledby="htmlacademy">
+        <title id="htmlacademy">Go to htmlacademy website.</title>
         <use xlink:href="#htmlacademy"></use>
       </svg>
     </a>
   </p>
-  <!--<div  class="bg"></div>-->
 </footer>
 </body>
 </html>
