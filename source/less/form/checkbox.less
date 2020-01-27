@@ -1,7 +1,7 @@
 
 .checkbox__label {
   font-size: 18px;
-  padding-top: 14px;
+  padding-top: 10px;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -33,13 +33,15 @@
     left: 28%;
     top: 33%;
     color: @greyinput-color;
+    display: none;
   }
 
   &:checked + svg {
     color: @radio-button-color;
+    display: inline;
   }
 
-  &:hover:not(:checked) {
+  &:hover {
     background: @greyinput-hover-color;
   }
 
@@ -47,7 +49,7 @@
     color: @greyinput-hover-color;
   }
 
-  &:hover:checked + svg {
+  &:checked:hover + svg {
     color: @radio-button-color;
   }
 
@@ -74,17 +76,16 @@
   .checkbox__label {
     font-size: 18px;
     padding-top: 0;
-    padding-bottom: 33px;
+    padding-bottom: 28px;
     margin-bottom: 0;
     width: 202px;
 
-    &[for="check1"],
-    &[for="check3"] {
+    &:nth-child(2n+1) {
       margin-right: 58px;
     }
 
     &:first-child {
-      padding-top: 12px;
+      padding-top: 14px;
     }
   }
 }
@@ -93,5 +94,14 @@
   .checkbox__label {
     width: auto;
     padding-bottom: 0;
+    margin-right: 70px;
+
+    &:nth-child(2n+1) {
+      margin-right: 70px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
