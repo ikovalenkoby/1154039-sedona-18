@@ -62,9 +62,9 @@
   line-height: 20px;
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @breakpoint-mobile2) {
   .clarification {
-    padding: 58px 43px 55px;
+    padding: 58px 6% 55px;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -132,6 +132,17 @@
     text-align: center;
   }
 }
+
+@media (min-width: @breakpoint-mobile2) and (max-width: @tablet-width) {
+  .clarification {
+    padding: 58px 5% 55px;
+  }
+
+  .clarification__description {
+    font-size: 13px;
+  }
+}
+
 
 @media (min-width: @desktop-width) {
   .clarification {
